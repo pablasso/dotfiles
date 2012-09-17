@@ -1,0 +1,15 @@
+[user]
+	name = Juan Pablo Ortiz Arechiga
+	email = pablasso@gmail.com
+[core]
+	excludesfile = /Users/pablasso/.gitignore_global
+[difftool "Kaleidoscope"]
+	cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
+[diff]
+	tool = Kaleidoscope
+[color]
+	ui = true
+[github]
+	user = pablasso
