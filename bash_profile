@@ -5,6 +5,9 @@ if [ "$TERM" == "dumb" ]; then
 	return   
 fi
 
+# editor
+#export EDITOR='vim'
+
 # folder colors
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
@@ -55,4 +58,8 @@ export NODE_PATH=/usr/local/lib/node_modules
 
 PS1='${MAGENTA}\u${WHITE} in ${GREEN}\w${WHITE}${MAGENTA}`__git_ps1 " on %s"`${WHITE}\r\n`set_prefix`${NORMAL}${CYAN}\033[s\033[u${WHITE} '
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
+# RVM
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+
+# tmuxinator
+[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator && source $HOME/.tmuxinator/scripts/tmuxinator_completion
