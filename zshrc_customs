@@ -1,0 +1,17 @@
+# default editor
+export EDITOR='vim'
+
+# go into a dir without typing cd
+setopt AUTO_CD
+
+# sublime text
+alias sub='open -a "Sublime Text 2"'
+
+# zsh completions
+fpath=(/usr/local/share/zsh-completions $fpath)
+
+# RVM
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+
+# tmuxinator
+[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator && source $HOME/.tmuxinator/scripts/tmuxinator_completion
