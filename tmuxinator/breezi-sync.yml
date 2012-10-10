@@ -1,0 +1,17 @@
+# ~/.tmuxinator/breezi-sync.yml
+
+project_name: Breezi Sync 
+project_root: ~/Development/breezi-sync
+#rvm: 1.9.3@breezi-sync
+tabs:
+  - misc:
+      layout: main-horizontal
+      panes:
+        - bundle exec foreman start -f Procfile.development -c pubsub=1
+        - bundle exec foreman start -f Procfile.development -c redis=1,mongodb=1
+  - webworker: 
+      layout: main-horizontal
+      panes: 
+        - bundle exec foreman start -f Procfile.development -c web=1
+        - bundle exec foreman start -f Procfile.development -c worker=4
+  - logs: tail -f log/development.log
