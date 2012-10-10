@@ -6,7 +6,7 @@ if [ "$TERM" == "dumb" ]; then
 fi
 
 # editor
-#export EDITOR='vim'
+export EDITOR='vim'
 
 # folder colors
 export CLICOLOR=1
