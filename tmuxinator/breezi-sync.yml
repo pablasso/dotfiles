@@ -2,7 +2,6 @@
 
 project_name: Breezi Sync 
 project_root: ~/Development/breezi-sync
-#rvm: 1.9.3@breezi-sync
 tabs:
   - misc:
       layout: main-horizontal
