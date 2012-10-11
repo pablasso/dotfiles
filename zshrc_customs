@@ -2,6 +2,10 @@
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
+# git
+alias gd='git diff'
+alias gdt='git difftool'
+
 # default editor
 export EDITOR='vim'
 
