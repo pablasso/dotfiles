@@ -1,3 +1,7 @@
+# set locale
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
 # default editor
 export EDITOR='vim'
 
