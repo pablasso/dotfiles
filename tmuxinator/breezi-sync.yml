@@ -4,16 +4,14 @@ project_name: Breezi Sync
 project_root: ~/Development/breezi-sync
 tabs:
   - console:
-      layout: main-horizontal
-      panes:
-        -
-  - misc:
-      layout: main-horizontal
-      panes:
-        - bundle exec foreman start -c pubsub=1
-        - bundle exec foreman start -c redis=1,mongodb=1
+      - gst
   - webworker: 
       layout: main-horizontal
       panes: 
         - bundle exec foreman start -c web=1
         - bundle exec foreman start -c worker=4
+  - misc:
+      layout: main-horizontal
+      panes:
+        - bundle exec foreman start -c pubsub=1
+        - bundle exec foreman start -c redis=1,mongodb=1
