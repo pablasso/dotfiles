@@ -3,6 +3,10 @@
 project_name: Breezi Sync 
 project_root: ~/Development/breezi-sync
 tabs:
+  - console:
+      layout: main-horizontal
+      panes:
+        -
   - misc:
       layout: main-horizontal
       panes:
@@ -13,4 +17,3 @@ tabs:
       panes: 
         - bundle exec foreman start -c web=1
         - bundle exec foreman start -c worker=4
-  - logs: tail -f log/development.log
