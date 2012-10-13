@@ -1,8 +1,17 @@
+" solarized theme
 syntax enable
 set background=dark
 colorscheme solarized
 
+" ack search
 map ,a :Ack 
+
+" buffer explorer
 map ,b :BuffergatorOpen<ENTER>
+
+" quickfix window
 map ,qo :copen<ENTER>
 map ,qc :cclose<ENTER>
+
+" toogle highlight
+map ,h :set hls!<ENTER>
