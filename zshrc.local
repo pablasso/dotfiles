@@ -2,9 +2,15 @@
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
+# disable auto-correct
+unsetopt correct_all
+
 # git
 alias gd='git diff'
 alias gdt='git difftool'
+
+# tmux
+alias tmux="TERM=screen-256color-bce tmux"
 
 # default editor
 export EDITOR='vim'
