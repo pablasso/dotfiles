@@ -9,7 +9,7 @@ tabs:
       layout: main-horizontal
       panes: 
         - bundle exec foreman start -c web=1
-        - bundle exec foreman start -c worker=4
+        - bundle exec rake environment resque:work RAILS_ENV=development QUEUE="*" VERBOSE=1
   - misc:
       layout: main-horizontal
       panes:
