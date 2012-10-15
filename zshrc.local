@@ -8,6 +8,7 @@ unsetopt correct_all
 # git
 alias gd='git diff'
 alias gdt='git difftool'
+alias glo='git log'
 
 # tmux
 alias tmux="TERM=screen-256color-bce tmux"
