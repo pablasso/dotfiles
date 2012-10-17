@@ -15,3 +15,6 @@ map ,qc :cclose<ENTER>
 
 " toogle highlight
 map ,h :set hls!<ENTER>
+
+" nerdtree
+map ,n :NERDTreeToggle<ENTER>
