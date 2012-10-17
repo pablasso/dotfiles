@@ -8,7 +8,7 @@ tabs:
   - webworker: 
       layout: main-horizontal
       panes: 
-        - bundle exec foreman start -c web=1
+        - rails s
         - bundle exec rake environment resque:work RAILS_ENV=development QUEUE="*" VERBOSE=1
   - misc:
       layout: main-horizontal
