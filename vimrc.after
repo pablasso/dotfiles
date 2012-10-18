@@ -9,6 +9,9 @@ map ,a :Ack
 " buffer explorer
 map ,b :BuffergatorOpen<ENTER>
 
+" close buffer
+map ,w :bd<ENTER>
+
 " quickfix window
 map ,qo :copen<ENTER>
 map ,qc :cclose<ENTER>
