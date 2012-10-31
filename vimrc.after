@@ -9,6 +9,10 @@ map ,a :Ack
 " buffer explorer
 map ,b :BuffergatorOpen<ENTER>
 
+" buffer previous and next
+map ,1 :bp<ENTER>
+map ,2 :bn<ENTER>
+
 " close buffer
 map ,w :bd<ENTER>
 
