@@ -40,3 +40,6 @@ tmp
 build/iphone
 build/android
 build.log
+
+# redis
+temp-*
