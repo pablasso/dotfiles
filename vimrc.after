@@ -26,5 +26,11 @@ map ,h :set hls!<ENTER>
 " nerdtree
 map ,n :NERDTreeToggle<ENTER>
 
+" toogle line numbers
+set number
+nnoremap <F2> :set nonumber!<CR>
+
 " avoid line numbers while selecting with the cursor
-se mouse+=a
+"set mouse+=a
+
+set clipboard=unnamed
