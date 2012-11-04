@@ -29,6 +29,10 @@ map ,h :set hls!<ENTER>
 " nerdtree
 map ,n :NERDTreeToggle<ENTER>
 
+" navigate by methods
+map m ]m
+map M [m
+
 " toogle line numbers
 set number
 nnoremap <F2> :set nonumber!<CR>
