@@ -3,6 +3,9 @@ syntax enable
 set background=dark
 colorscheme solarized
 
+" don't force the buffers to be saved before opening a new one
+set hidden
+
 " ack search
 map ,a :Ack 
 
