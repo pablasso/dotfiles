@@ -33,9 +33,14 @@ map ,n :NERDTreeToggle<ENTER>
 map m ]m
 map M [m
 
-" toogle line numbers
+" toggle paste mode
+set pastetoggle=<F2>
+
+" show line numbers
 set number
-nnoremap <F2> :set nonumber!<CR>
+
+" toggle line numbers
+nnoremap <F3> :set nonumber!<CR>
 
 " avoid line numbers while selecting with the cursor
 "set mouse+=a
