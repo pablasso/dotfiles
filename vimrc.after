@@ -43,6 +43,7 @@ set number
 nnoremap <F3> :set nonumber!<CR>
 
 " avoid line numbers while selecting with the cursor
-"set mouse+=a
+set mouse+=a
+set ttymouse=xterm2
 
 set clipboard=unnamed
