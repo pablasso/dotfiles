@@ -46,4 +46,5 @@ nnoremap <F3> :set nonumber!<CR>
 set mouse+=a
 set ttymouse=xterm2
 
-set clipboard=unnamed
+" copy to system clipboard
+vmap ,c y:call system("pbcopy", getreg("\""))<CR>
