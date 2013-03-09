@@ -6,8 +6,8 @@ colorscheme solarized
 " don't force the buffers to be saved before opening a new one
 set hidden
 
-" ack search
-map ,a :Ack 
+" the silver searcher
+map ,a :Ag 
 
 " buffer explorer
 map ,b :BuffergatorOpen<ENTER>
