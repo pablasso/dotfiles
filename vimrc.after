@@ -7,7 +7,7 @@ colorscheme solarized
 set hidden
 
 " the silver searcher
-map ,a :Ag 
+map ,a :Ag -S 
 
 " buffer explorer
 map ,b :BuffergatorOpen<ENTER>
