@@ -23,7 +23,7 @@ export EDITOR='vim'
 setopt AUTO_CD
 
 # sublime text
-alias sub='open -a "Sublime Text 2"'
+alias sub='open -a "Sublime Text"'
 
 # zsh completions
 fpath=(/usr/local/share/zsh-completions $fpath)
