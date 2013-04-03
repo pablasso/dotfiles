@@ -6,6 +6,6 @@ tabs:
   - iosapp:
       - gst
   - node-server:
-      - cd ../tokbox-node-server && gst && node server.js
+      - cd ../tokbox-node-server && gst && sudo node server.js
   - webapp:
       - cd ../tokbox-webapp && gst && rails s

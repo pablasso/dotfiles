@@ -43,3 +43,7 @@ build.log
 
 # redis
 temp-*
+
+#tmux
+tmux-client-*
+tmux-server-*
