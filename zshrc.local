@@ -7,6 +7,7 @@ DISABLE_AUTO_TITLE=true
 
 # disable auto-correct
 unsetopt correct_all
+unsetopt correct
 
 # git
 alias gd='git diff'
