@@ -1,0 +1,9 @@
+{
+  "ignored_packages": ["Vintage"],
+  "phoenix_color_yellow": true,
+  "theme": "Phoenix Dark.sublime-theme",
+  "phoenix_color_yellow": true,
+  "font_face": "Inconsolata",
+  "font_size": 14,
+  "translate_tabs_to_spaces": true
+}
