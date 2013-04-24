@@ -1,11 +1,11 @@
 # ~/.tmuxinator/webrtc.yml
 
 project_name: webrtc
-project_root: ~/Development/tokbox-iosapp
+project_root: ~/Development/oscar-ios
 tabs:
   - iosapp:
       - gst
   - node-server:
-      - cd ../tokbox-node-server && gst && sudo node server.js
+      - cd ../oscar-node && gst && sudo node server.js
   - webapp:
-      - cd ../tokbox-webapp && gst && rails s
+      - cd ../oscar-web && gst && rails s
