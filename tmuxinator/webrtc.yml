@@ -9,3 +9,5 @@ tabs:
       - cd ../oscar-node && gst && sudo node server.js
   - webapp:
       - cd ../oscar-web && gst && rails s
+  - metriclient:
+      - cd ../metriclient && gst && foreman start
