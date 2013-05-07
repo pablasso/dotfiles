@@ -1,8 +1,6 @@
 {
   "ignored_packages": [],
-  "phoenix_color_yellow": true,
-  "theme": "Phoenix Dark.sublime-theme",
-  "phoenix_color_yellow": true,
+  "theme": "Soda Dark.sublime-theme",
   "font_face": "Inconsolata",
   "font_size": 14,
   "detect_indentation": false,
