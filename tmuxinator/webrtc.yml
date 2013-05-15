@@ -6,6 +6,12 @@ tabs:
   - iosapp:
       - gst
   - node-server:
-      - cd ../oscar-node && gst && sudo node server.js
+      layout: main-horizontal
+      panes:
+        - cd ../oscar-node && sudo node server.js
+        - cd ../oscar-node && gst
   - webapp:
-      - cd ../oscar-web && gst && rails s
+      layout: main-horizontal
+      panes:
+        - cd ../oscar-web && rails s
+        - cd ../oscar-web && gst
