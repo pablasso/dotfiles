@@ -1,9 +1,11 @@
 {
-  "ignored_packages": [],
-  "theme": "Soda Dark.sublime-theme",
-  "font_face": "Inconsolata",
-  "font_size": 14,
-  "detect_indentation": false,
-  "tab_size": 2,
-  "translate_tabs_to_spaces": true
+	"detect_indentation": true,
+	"font_face": "SourceCodePro-Regular",
+	"font_size": 13,
+	"ignored_packages":
+	[
+	],
+	"tab_size": 2,
+	"theme": "Soda Dark.sublime-theme",
+	"translate_tabs_to_spaces": true
 }
