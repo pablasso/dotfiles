@@ -1,7 +1,7 @@
 {
 	"detect_indentation": true,
-	"font_face": "SourceCodePro-Regular",
-	"font_size": 13,
+	"font_face": "Inconsolata",
+	"font_size": 14,
 	"ignored_packages":
 	[
 	],
