@@ -15,3 +15,8 @@ tabs:
       panes:
         - cd ../oscar-web && rails s
         - cd ../oscar-web && gst
+  - misc:
+      layout: main-horizontal
+      panes:
+        - mysql.server start && redis-server
+        - cd ../oscar-web && rake resque:work QUEUE=*
