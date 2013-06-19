@@ -26,6 +26,9 @@ setopt AUTO_CD
 # sublime text
 alias sub='open -a "Sublime Text"'
 
+# npm global installs
+export PATH=/usr/local/share/npm/bin:$PATH
+
 # zsh completions
 fpath=(/usr/local/share/zsh-completions $fpath)
 
