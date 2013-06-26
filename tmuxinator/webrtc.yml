@@ -19,4 +19,4 @@ tabs:
       layout: main-horizontal
       panes:
         - mysql.server start && redis-server
-        - cd ../oscar-web && rake resque:work QUEUE=*
+        - cd ../oscar-web && QUEUE=* rake resque:work
