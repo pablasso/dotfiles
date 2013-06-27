@@ -42,6 +42,7 @@ build.log
 
 # redis
 temp-*
+dump.rdb
 
 #tmux
 tmux-client-*
