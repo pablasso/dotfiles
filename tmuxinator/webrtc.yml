@@ -3,14 +3,14 @@
 project_name: webrtc
 project_root: ~/Development/oscar-ios
 tabs:
-  - iosapp:
+  - ios:
       - gst
-  - node-server:
+  - node:
       layout: main-horizontal
       panes:
         - cd ../oscar-node && sudo node server.js
         - cd ../oscar-node && gst
-  - webapp:
+  - web:
       layout: main-horizontal
       panes:
         - cd ../oscar-web && rails s
