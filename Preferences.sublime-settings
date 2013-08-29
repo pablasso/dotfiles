@@ -1,5 +1,5 @@
 {
-	"color_scheme": "Packages/User/IR_White.tmTheme",
+	"color_scheme": "Packages/Color Scheme - Default/Solarized (Dark).tmTheme",
 	"detect_indentation": true,
 	"font_face": "Inconsolata",
 	"font_size": 14,
@@ -7,6 +7,6 @@
 	[
 	],
 	"tab_size": 2,
-	"theme": "Soda Light.sublime-theme",
+	"theme": "Soda Dark.sublime-theme",
 	"translate_tabs_to_spaces": true
 }
