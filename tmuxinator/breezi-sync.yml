@@ -2,7 +2,7 @@
 
 project_name: Breezi Sync 
 project_root: ~/Development/breezi-sync
-tabs:
+windows:
   - console: gst
   - webworker: 
       layout: main-horizontal

@@ -2,7 +2,7 @@
 
 project_name: tunes
 project_root: ~/Development/mideastunes
-tabs:
+windows:
   - ios: cd ../mideasttunes-ios && gst
   - web:
       layout: main-horizontal
