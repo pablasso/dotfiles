@@ -3,8 +3,7 @@
 project_name: Breezi Sync 
 project_root: ~/Development/breezi-sync
 tabs:
-  - console:
-      - gst
+  - console: gst
   - webworker: 
       layout: main-horizontal
       panes: 

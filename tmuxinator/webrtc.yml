@@ -2,9 +2,8 @@
 
 project_name: webrtc
 project_root: ~/Development/oscar-ios
-tabs:
-  - ios:
-      - gst
+windows:
+  - ios: gst
   - node:
       layout: main-horizontal
       panes:

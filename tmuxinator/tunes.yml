@@ -3,8 +3,7 @@
 project_name: tunes
 project_root: ~/Development/mideastunes
 tabs:
-  - ios:
-      - cd ../mideasttunes-ios && gst
+  - ios: cd ../mideasttunes-ios && gst
   - web:
       layout: main-horizontal
       panes:
