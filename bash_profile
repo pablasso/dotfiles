@@ -1,4 +1,4 @@
-export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
+export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/pablasso/Library/Python/2.7/bin/
 
 # don't set PS1 if dterm is used
 if [ "$TERM" == "dumb" ]; then
