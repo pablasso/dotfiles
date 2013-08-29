@@ -48,3 +48,8 @@ set ttymouse=xterm2
 
 " copy to system clipboard
 vmap ,c y:call system("pbcopy", getreg("\""))<CR>
+
+" powerline setup if installed with pip
+python from powerline.vim import setup as powerline_setup
+python powerline_setup()
+python del powerline_setup
