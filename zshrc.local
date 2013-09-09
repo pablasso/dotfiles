@@ -27,8 +27,10 @@ setopt AUTO_CD
 alias sub='open -a "Sublime Text"'
 
 # npm global installs
-# powerline path
-export PATH=/usr/local/share/npm/bin:/Users/pablasso/Library/Python/2.7/bin/:$PATH
+export PATH=/usr/local/share/npm/bin:$PATH
+
+# vim python path (did this for powerline)
+export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
 
 # zsh completions
 fpath=(/usr/local/share/zsh-completions $fpath)
