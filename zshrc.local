@@ -18,7 +18,10 @@ alias glo='git log'
 alias tmux="TERM=screen-256color-bce tmux"
 
 # default editor
-export EDITOR='vim'
+export EDITOR='mvim'
+
+# even shorter mvim
+alias m='mvim'
 
 # go into a dir without typing cd
 setopt AUTO_CD

@@ -3,6 +3,7 @@
 	email = pablasso@gmail.com
 [core]
 	excludesfile = /Users/pablasso/.gitignore_global
+	editor = mvim -f
 [diff]
 	tool = Kaleidoscope
 [color]
