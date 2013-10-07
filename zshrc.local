@@ -35,6 +35,12 @@ export PATH=/usr/local/share/npm/bin:$PATH
 # vim python path (did this for powerline)
 export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
 
+# go libraries path
+export GOPATH=$HOME/.gocode
+
+# go binaries
+export PATH=$PATH:$HOME/.gocode/bin
+
 # zsh completions
 fpath=(/usr/local/share/zsh-completions $fpath)
 
