@@ -14,12 +14,10 @@ Thumbs.db
 *.perspectivev3
 !default.perspectivev3
 xcuserdata
-profile
 *.moved-aside
 DerivedData
 .idea/
 *.hmap
-xcshareddata
 
 # ruby
 *.gem
