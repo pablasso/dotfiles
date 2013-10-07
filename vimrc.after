@@ -46,6 +46,10 @@ nnoremap <F3> :set nonumber!<CR>
 set mouse+=a
 set ttymouse=xterm2
 
+" i don't like autowrapping
+set textwidth=0
+set wrap
+
 " copy to system clipboard
 vmap ,c y:call system("pbcopy", getreg("\""))<CR>
 
