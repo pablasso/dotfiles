@@ -4,3 +4,6 @@
 [submodule "janus/emmet-vim"]
 	path = janus/emmet-vim
 	url = git@github.com:mattn/emmet-vim.git
+[submodule "janus/vim-surround"]
+	path = janus/vim-surround
+	url = git@github.com:tpope/vim-surround.git
