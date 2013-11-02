@@ -1,0 +1,6 @@
+[submodule "janus/ag.vim"]
+	path = janus/ag.vim
+	url = git@github.com:rking/ag.vim.git
+[submodule "janus/emmet-vim"]
+	path = janus/emmet-vim
+	url = git@github.com:mattn/emmet-vim.git
