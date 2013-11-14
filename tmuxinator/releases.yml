@@ -1,0 +1,10 @@
+# ~/.tmuxinator/releases.yml
+
+project_name: releases
+project_root: ~/Development/releases-api
+windows:
+  - api:
+      layout: main-horizontal
+      panes:
+        - rails s
+        - gst
