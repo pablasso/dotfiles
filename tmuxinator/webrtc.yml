@@ -7,7 +7,7 @@ windows:
   - node:
       layout: main-horizontal
       panes:
-        - cd ../oscar-node && node server.js
+        - cd ../oscar-node && sleep 5 & node server.js
         - cd ../oscar-node && gst
   - web:
       layout: main-horizontal
