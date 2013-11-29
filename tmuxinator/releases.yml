@@ -8,3 +8,8 @@ windows:
       panes:
         - rails s
         - gst
+  - misc:
+      layout: main-horizontal
+      panes:
+        - mysql.server start
+        -
