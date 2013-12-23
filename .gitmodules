@@ -7,3 +7,18 @@
 [submodule "janus/vim-surround"]
 	path = janus/vim-surround
 	url = git@github.com:tpope/vim-surround.git
+[submodule "janus/emmet"]
+	path = janus/emmet
+	url = git@github.com:mattn/emmet-vim.git
+[submodule "janus/ag"]
+	path = janus/ag
+	url = git@github.com:rking/ag.vim.git
+[submodule "janus/vim-colors-solarized"]
+	path = janus/vim-colors-solarized
+	url = git://github.com/altercation/vim-colors-solarized.git
+[submodule "janus/vim-sorround"]
+	path = janus/vim-sorround
+	url = git@github.com:tpope/vim-surround.git
+[submodule "janus/ack"]
+	path = janus/ack
+	url = git@github.com:mileszs/ack.vim.git
