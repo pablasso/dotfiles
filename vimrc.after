@@ -3,6 +3,9 @@ syntax enable
 set background=dark
 colorscheme solarized
 
+" no swap/backup files
+:set noswapfile
+
 " don't force the buffers to be saved before opening a new one
 set hidden
 
