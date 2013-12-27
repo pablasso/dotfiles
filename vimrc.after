@@ -53,6 +53,15 @@ set ttymouse=xterm2
 set textwidth=0
 set wrap
 
+" on the ctrlp plugin, only list the files that git/hg see, if applicable
+let g:ctrlp_user_command = {
+\  'types': {
+\    1: ['.git', 'cd %s && git ls-files --cached --exclude-standard --others'],
+\    2: ['.hg', 'hg --cwd %s locate -I .'],
+\  },
+\  'fallback': 'find %s -type f',
+\ }
+
 " copy to system clipboard
 vmap ,c y:call system("pbcopy", getreg("\""))<CR>
 
