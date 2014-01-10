@@ -3,6 +3,12 @@ syntax enable
 set background=dark
 colorscheme solarized
 
+" indenting
+set smartindent
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
 " no swap/backup files
 :set noswapfile
 
