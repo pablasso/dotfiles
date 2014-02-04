@@ -22,3 +22,6 @@
 [submodule "janus/ack"]
 	path = janus/ack
 	url = git@github.com:mileszs/ack.vim.git
+[submodule "janus/vim-startify"]
+	path = janus/vim-startify
+	url = https://github.com/mhinz/vim-startify
