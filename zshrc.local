@@ -29,6 +29,9 @@ setopt AUTO_CD
 # sublime text
 alias sub='open -a "Sublime Text"'
 
+# atom
+alias atom='open -a "Atom"'
+
 # npm global installs
 export PATH=/usr/local/share/npm/bin:$PATH
 
