@@ -16,7 +16,7 @@ set expandtab
 set hidden
 
 " the silver searcher
-map ,a :Ag -S 
+map ,a :Ack
 
 " buffer explorer
 map ,b :BuffergatorOpen<ENTER>
