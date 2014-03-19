@@ -1,12 +1,9 @@
 {
-	"color_scheme": "Packages/Color Scheme - Default/Solarized (Dark).tmTheme",
-	"detect_indentation": true,
-	"font_face": "Inconsolata",
-	"font_size": 14,
-	"ignored_packages":
-	[
-	],
-	"tab_size": 2,
-	"theme": "Soda Dark.sublime-theme",
-	"translate_tabs_to_spaces": true
+    "theme": "Spacegray.sublime-theme",
+    "color_scheme": "Packages/User/base16-ocean.dark (SL).tmTheme",
+    "font_face": "Inconsolata For Powerline",
+    "font_size": 14,
+    "detect_indentation": true,
+    "translate_tabs_to_spaces": true,
+    "ignored_packages":[]
 }
