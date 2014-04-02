@@ -5,5 +5,9 @@
     "font_size": 14,
     "detect_indentation": true,
     "translate_tabs_to_spaces": true,
-    "ignored_packages":[]
+    "ignored_packages":[],
+    "file_exclude_patterns":
+    [
+        "dist/", "lib/", "bin/"
+    ]
 }
