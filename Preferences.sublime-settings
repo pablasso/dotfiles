@@ -1,13 +1,16 @@
 {
-    "theme": "Spacegray.sublime-theme",
-    "color_scheme": "Packages/User/base16-ocean.dark (SL).tmTheme",
-    "font_face": "Inconsolata For Powerline",
-    "font_size": 14,
-    "detect_indentation": true,
-    "translate_tabs_to_spaces": true,
-    "ignored_packages":[],
-    "file_exclude_patterns":
-    [
-        "dist/", "lib/", "bin/"
-    ]
+	"color_scheme": "Packages/User/base16-ocean.dark (SL).tmTheme",
+	"detect_indentation": true,
+	"file_exclude_patterns":
+	[
+		"dist/",
+		"bin/"
+	],
+	"font_face": "Inconsolata For Powerline",
+	"font_size": 14,
+	"ignored_packages":
+	[
+	],
+	"theme": "Spacegray.sublime-theme",
+	"translate_tabs_to_spaces": true
 }
