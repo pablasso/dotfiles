@@ -25,3 +25,6 @@
 [submodule "janus/vim-startify"]
 	path = janus/vim-startify
 	url = https://github.com/mhinz/vim-startify
+[submodule "private-dotfiles"]
+	path = private-dotfiles
+	url = git@bitbucket.org:pablasso/private-dotfiles.git
