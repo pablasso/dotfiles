@@ -4,7 +4,8 @@
 	"file_exclude_patterns":
 	[
 		"dist/",
-		"bin/"
+		"bin/",
+		"*.pyc",
 	],
 	"font_face": "Inconsolata For Powerline",
 	"font_size": 14,
