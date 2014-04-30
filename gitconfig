@@ -1,22 +1,22 @@
 [user]
-	name = Juan Pablo Ortiz
-	email = pablasso@gmail.com
+    name = Juan Pablo Ortiz
+    email = pablasso@gmail.com
 [core]
-	excludesfile = /Users/pablasso/.gitignore_global
-	editor = mvim -f
+    excludesfile = /Users/pablasso/.gitignore_global
+    editor = subl -w
 [diff]
-	tool = Kaleidoscope
+    tool = Kaleidoscope
 [color]
-	ui = true
+    ui = true
 [github]
-	user = pablasso
+    user = pablasso
 [difftool "Kaleidoscope"]
-	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+    cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [difftool]
-	prompt = false
+    prompt = false
 [push]
-	default = simple
+    default = simple
 [alias]
-  ignore = !git update-index --assume-unchanged 
-  unignore = !git update-index --no-assume-unchanged
-  ignored = !git ls-files -v | grep ^[a-z]
+    ignore = !git update-index --assume-unchanged 
+    unignore = !git update-index --no-assume-unchanged
+    ignored = !git ls-files -v | grep ^[a-z]
