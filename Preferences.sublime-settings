@@ -5,7 +5,8 @@
 	[
 		"dist/",
 		"bin/",
-		"*.pyc"
+		"*.pyc",
+		".tmp/"
 	],
 	"font_face": "Inconsolata For Powerline",
 	"font_size": 14,
