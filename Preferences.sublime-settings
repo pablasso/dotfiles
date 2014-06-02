@@ -6,7 +6,9 @@
 		"dist/",
 		"bin/",
 		"*.pyc",
-		".tmp/"
+		".tmp/",
+		".sass-cache/",
+		"bower_components/"
 	],
 	"font_face": "Inconsolata For Powerline",
 	"font_size": 14,
@@ -14,5 +16,6 @@
 	[
 	],
 	"theme": "Spacegray.sublime-theme",
-	"translate_tabs_to_spaces": true
+	"translate_tabs_to_spaces": true,
+	"vintage_start_in_command_mode": true
 }
