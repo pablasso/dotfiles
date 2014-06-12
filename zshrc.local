@@ -49,12 +49,6 @@ export GAE="/usr/local/google_appengine"
 export PYTHONPATH="$PYTHONPATH:$GAE:$GAE/lib/django-1.5"
 export PATH="$PATH:$GAE/lib/django-1.5/django/bin/"
 
-# go libraries path
-export GOPATH=$HOME/.gocode
-
-# go binaries
-export PATH=$PATH:$HOME/.gocode/bin
-
 # apportable
 export PATH=$PATH:$HOME/.apportable/SDK/bin
 
