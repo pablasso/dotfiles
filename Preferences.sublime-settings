@@ -8,7 +8,8 @@
 		"*.pyc",
 		".tmp/",
 		".sass-cache/",
-		"bower_components/"
+		"bower_components/",
+		"node_modules/"
 	],
 	"font_face": "Inconsolata For Powerline",
 	"font_size": 14,
