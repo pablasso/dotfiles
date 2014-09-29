@@ -61,9 +61,6 @@ export PATH=/usr/local/bin:$PATH
 # tmuxinator
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator && source $HOME/.tmuxinator/scripts/tmuxinator_completion
 
-# RVM
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
-
 # startup virtualenv-burrito
 if [ -f $HOME/.venvburrito/startup.sh ]; then
     . $HOME/.venvburrito/startup.sh
