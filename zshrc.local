@@ -17,9 +17,6 @@ alias glo='git log'
 # tmux
 alias tmux="TERM=screen-256color-bce tmux"
 
-# default editor
-export EDITOR='sub'
-
 # even shorter mvim
 alias v='mvim'
 

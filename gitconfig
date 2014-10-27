@@ -3,7 +3,6 @@
     email = pablasso@gmail.com
 [core]
     excludesfile = /Users/pablasso/.gitignore_global
-    editor = subl -w
 [diff]
     tool = Kaleidoscope
 [color]
