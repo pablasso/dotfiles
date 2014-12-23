@@ -9,7 +9,8 @@
 		".tmp/",
 		".sass-cache/",
 		"bower_components/",
-		"node_modules/"
+		"node_modules/",
+		"app/scripts/templates.js"
 	],
 	"font_face": "Inconsolata For Powerline",
 	"font_size": 14,
