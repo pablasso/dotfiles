@@ -75,3 +75,7 @@ vmap ,c y:call system("pbcopy", getreg("\""))<CR>
 python from powerline.vim import setup as powerline_setup
 python powerline_setup()
 python del powerline_setup
+
+" remove ugly macvim scrollbars
+set guioptions=r
+set guioptions-=r
