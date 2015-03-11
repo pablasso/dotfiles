@@ -79,3 +79,38 @@ python del powerline_setup
 " remove ugly macvim scrollbars
 set guioptions=r
 set guioptions-=r
+
+" startify
+let g:startify_list_order = [
+    \ ['    Projects:'],
+    \ 'bookmarks'
+\ ]
+
+let g:startify_bookmarks = [
+    \ '~/Development/wizeline-api',
+    \ '~/Development/wizeline-webapp',
+    \ '~/Development/wizeline-engagement',
+    \ '~/Development/wizeline-issues',
+    \ '~/Development/wizeline-jira-cloud',
+    \ '~/Development/wizeline-website',
+    \ '~/Development/dotfiles',
+    \ '~/Development/private-dotfiles',
+    \ '~/Development/chocobot',
+    \ '~/Development/donsignore-landing',
+    \ '~/Development/blag',
+    \ '~/Development/blag-drafts'
+\]
+
+let g:startify_enable_special = 0
+
+let g:startify_custom_header = [
+    \ '      _____________________              ',
+    \ '     <      something      >             ',
+    \ '      ---------------------              ',
+    \ '                 \   ^__^                ',
+    \ '                  \  (oo)\_______        ',
+    \ '                     (__)\       )\/\    ',
+    \ '                         ||----w |       ',
+    \ '                         ||     ||       ',
+    \ '                                         '
+\]
