@@ -17,8 +17,9 @@ set expandtab
 set hidden
 
 " the silver searcher
-
+let g:ackprg = 'ag --nogroup --nocolor --column'
 map ,a :Ack 
+
 " buffer explorer
 map ,b :BuffergatorOpen<ENTER>
 
