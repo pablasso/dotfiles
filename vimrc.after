@@ -2,7 +2,7 @@
 let base16colorspace=256
 syntax enable
 set background=dark
-colorscheme base16-twilight
+colorscheme base16-ocean
 " indenting
 set smartindent
 set tabstop=4
@@ -42,6 +42,8 @@ map ,n :NERDTreeToggle<ENTER>
 " navigate by methods
 map m ]m
 map M [m
+
+set ignorecase
 
 " toggle paste mode
 set pastetoggle=<F2>
