@@ -35,6 +35,9 @@ export PATH=/usr/local/share/npm/bin:$PATH
 # vim python path (did this for powerline)
 export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
 
+# elasticbeanstalk
+export PATH=~/.elasticbeanstalk/eb/macosx/python2.7/:$PATH
+
 # pip should only run if there is a virtualenv currently activated
 #export PIP_REQUIRE_VIRTUALENV=true
 
