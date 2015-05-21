@@ -83,6 +83,9 @@ python del powerline_setup
 set guioptions=r
 set guioptions-=r
 
+" cycle to last buffer with tab
+nmap <tab> :b#<cr>
+
 " startify
 let g:startify_list_order = [
     \ ['    Projects:'],
