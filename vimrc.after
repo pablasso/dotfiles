@@ -102,6 +102,7 @@ let g:startify_bookmarks = [
     \ '~/Development/wizeline-engagement',
     \ '~/Development/wizeline-issues',
     \ '~/Development/wizeline-jira-cloud',
+    \ '~/Development/wizeline-deployer',
     \ '~/Development/wizeline-website',
     \ '~/Development/dotfiles',
     \ '~/Development/private-dotfiles',
