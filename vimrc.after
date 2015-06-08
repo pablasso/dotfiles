@@ -12,7 +12,7 @@ set hidden
 
 " the silver searcher
 let g:ackprg = 'ag --nogroup --nocolor --column'
-map ,a :Ack 
+map ,a :Ack
 
 " buffer explorer
 map ,b :BuffergatorOpen<ENTER>
@@ -56,6 +56,8 @@ set ttymouse=xterm2
 " i don't like autowrapping
 set textwidth=0
 set wrap
+
+command Current :let @+ = expand("%:p")
 
 " on the ctrlp plugin, only list the files that git/hg see, if applicable
 let g:ctrlp_user_command = {
