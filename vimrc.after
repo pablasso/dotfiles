@@ -83,6 +83,10 @@ python del powerline_setup
 set guioptions=r
 set guioptions-=r
 
+" editorconfig setup
+let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
+let g:EditorConfig_exec_path = '/usr/local/Cellar/editorconfig/0.12.0/bin/'
+
 " cycle to last buffer with tab
 nmap <tab> :b#<cr>
 
