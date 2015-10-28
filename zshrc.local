@@ -85,3 +85,5 @@ eval "$(rbenv init -)"
 # wizeline
 export WIZELINE_WEBAPP_DONT_OPEN=1
 export WIZELINE_API_NOTHREADSAFE=1
+
+source ~/.nvm
