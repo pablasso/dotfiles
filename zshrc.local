@@ -32,6 +32,9 @@ alias atom='open -a "Atom"'
 # npm global installs
 export PATH=/usr/local/share/npm/bin:$PATH
 
+# run local node packages
+alias npm-exec='PATH=$(npm bin):$PATH'
+
 # vim python path (did this for powerline)
 export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
 
