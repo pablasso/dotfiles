@@ -58,6 +58,10 @@ export PATH=/usr/local/bin:$PATH
 # tmuxinator
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator && source $HOME/.tmuxinator/scripts/tmuxinator_completion
 
+# virtualenvwrapper
+export WORKON_HOME=$HOME/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
+
 # The next line updates PATH for the Google Cloud SDK.
 export PATH=/Users/pablasso/google-cloud-sdk/bin:$PATH
 
