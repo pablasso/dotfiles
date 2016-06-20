@@ -29,6 +29,10 @@ alias sub='open -a "Sublime Text"'
 # atom
 alias atom='open -a "Atom"'
 
+# default editor
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
 # npm global installs
 export PATH=/usr/local/share/npm/bin:$PATH
 
