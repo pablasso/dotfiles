@@ -1,3 +1,0 @@
-[submodule "private-dotfiles"]
-	path = private-dotfiles
-	url = git@bitbucket.org:pablasso/private-dotfiles.git
