@@ -2,7 +2,8 @@
   name = Juan Pablo Ortiz
   email = me@pablasso.com
 [core]
-    excludesfile = /Users/pablasso/.gitignore_global
+	excludesfile = /Users/pablasso/.gitignore_global
+	editor = nvim
 [diff]
     tool = Kaleidoscope
 [color]
@@ -16,7 +17,7 @@
 [push]
     default = simple
 [alias]
-    ignore = !git update-index --assume-unchanged 
+    ignore = !git update-index --assume-unchanged
     unignore = !git update-index --no-assume-unchanged
     ignored = !git ls-files -v | grep ^[a-z]
     co = checkout
@@ -24,3 +25,5 @@
     l = pull
     p = push
     b = branch
+[credential]
+	helper = osxkeychain
