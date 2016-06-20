@@ -81,3 +81,12 @@ eval "$(rbenv init -)"
 # wizeline
 export WIZELINE_WEBAPP_DONT_OPEN=1
 export WIZELINE_API_NOTHREADSAFE=1
+
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Setting ag as the default source for fzf
+export FZF_DEFAULT_COMMAND='pt -g ""'
+
+# To apply the command to CTRL-T as well
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
