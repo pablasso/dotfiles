@@ -1,6 +1,6 @@
 [user]
-    name = Juan Pablo Ortiz
-    email = pablasso@gmail.com
+  name = Juan Pablo Ortiz
+  email = me@pablasso.com
 [core]
     excludesfile = /Users/pablasso/.gitignore_global
 [diff]
