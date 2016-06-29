@@ -29,6 +29,8 @@ nmap <C-P> :FZF<cr>
 map <leader>/ <plug>NERDCommenterToggle<cr>
 " turn off highlighting temporarily
 map ,h :noh<cr>
+" Dash.app
+map ,d :Dash<cr>
 
 " PLUGINS =====
 
@@ -48,6 +50,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'kylef/apiblueprint.vim'
+Plug 'rizzatti/dash.vim'
 
 call plug#end()
 
