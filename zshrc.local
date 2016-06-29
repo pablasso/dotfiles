@@ -17,8 +17,8 @@ alias glo='git log'
 # tmux
 alias tmux="TERM=screen-256color-bce tmux"
 
-# even shorter mvim
-alias v='mvim'
+# even shorter nvim
+alias v='nvim'
 
 # go into a dir without typing cd
 setopt AUTO_CD
