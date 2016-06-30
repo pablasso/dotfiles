@@ -51,7 +51,8 @@ Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'kylef/apiblueprint.vim'
 Plug 'rizzatti/dash.vim'
-Plug 'teugen0329/vim-esearch'
+Plug 'eugen0329/vim-esearch'
+Plug 'wakatime/vim-wakatime'
 
 call plug#end()
 
