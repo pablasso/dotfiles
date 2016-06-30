@@ -51,6 +51,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'kylef/apiblueprint.vim'
 Plug 'rizzatti/dash.vim'
+Plug 'teugen0329/vim-esearch'
 
 call plug#end()
 
@@ -58,3 +59,12 @@ call plug#end()
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#enable_ignore_case = 1
 set completeopt+=noinsert
+
+" global search
+let g:esearch = {
+  \ 'adapter': 'pt',
+  \ 'backend': 'nvim',
+  \ 'out': 'win',
+  \ 'batch_size': 1000,
+  \ 'use': ['visual', 'hlsearch', 'last'],
+\ }
