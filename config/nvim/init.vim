@@ -53,6 +53,8 @@ Plug 'kylef/apiblueprint.vim'
 Plug 'rizzatti/dash.vim'
 Plug 'eugen0329/vim-esearch'
 Plug 'wakatime/vim-wakatime'
+" remove this when this gets fixed: https://github.com/eugen0329/vim-esearch/issues/2
+Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 
 call plug#end()
 
@@ -64,7 +66,7 @@ set completeopt+=noinsert
 " global search
 let g:esearch = {
   \ 'adapter': 'pt',
-  \ 'backend': 'nvim',
+  \ 'backend': 'vimproc',
   \ 'out': 'win',
   \ 'batch_size': 1000,
   \ 'use': ['visual', 'hlsearch', 'last'],
