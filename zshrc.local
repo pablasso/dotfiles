@@ -13,6 +13,7 @@ unsetopt correct
 alias ga='git add'
 alias gc='git commit --verbose'
 alias gst='git status'
+alias gs='git show'
 alias gco='git checkout'
 alias gl='git pull'
 alias gp='git push'
