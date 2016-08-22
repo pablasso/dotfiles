@@ -80,6 +80,11 @@ alias pg_stop='launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
+# docker
+eval "$(docker-machine env default)"
+alias dockerize='eval "$(docker-machine env default)"'
+alias kill-containers='docker kill $(docker ps -q)'
+
 # wizeline
 export WIZELINE_WEBAPP_DONT_OPEN=1
 export WIZELINE_API_NOTHREADSAFE=1
