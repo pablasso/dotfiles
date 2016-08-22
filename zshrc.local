@@ -75,17 +75,13 @@ source /usr/local/bin/virtualenvwrapper_lazy.sh
 # The next line updates PATH for the Google Cloud SDK.
 export PATH=/Users/pablasso/google-cloud-sdk/bin:$PATH
 
-# aliases
-alias pg_start='launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist'
-alias pg_stop='launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist'
-
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 alias rbinit='eval "$(rbenv init -)"'
 
 # docker
 alias dockerize='eval "$(docker-machine env default)"'
-alias kill-containers='docker kill $(docker ps -q)'
+alias kill_containers='docker kill $(docker ps -q)'
 
 # wizeline
 export WIZELINE_WEBAPP_DONT_OPEN=1
