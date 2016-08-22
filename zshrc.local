@@ -93,6 +93,10 @@ export WIZELINE_API_NOTHREADSAFE=1
 alias switchtoint='kubectl config use-context aws_k8s-internal'
 alias switchtoprod='kubectl config use-context aws_k8s-production'
 
+# nvm
+export NVM_DIR="$HOME/.nvm"
+alias nvminit='source "$NVM_DIR/nvm.sh"'
+
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
