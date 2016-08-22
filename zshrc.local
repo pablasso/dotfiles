@@ -10,6 +10,13 @@ unsetopt correct_all
 unsetopt correct
 
 # git
+alias ga='git add'
+alias gc='git commit --verbose'
+alias gst='git status'
+alias gco='git checkout'
+alias gl='git pull'
+alias gp='git push'
+alias gb='git branch'
 alias gd='git diff'
 alias gdt='git difftool'
 alias glo='git log'

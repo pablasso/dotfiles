@@ -16,14 +16,5 @@
     prompt = false
 [push]
     default = simple
-[alias]
-    ignore = !git update-index --assume-unchanged
-    unignore = !git update-index --no-assume-unchanged
-    ignored = !git ls-files -v | grep ^[a-z]
-    co = checkout
-    st = status
-    l = pull
-    p = push
-    b = branch
 [credential]
 	helper = osxkeychain
