@@ -63,18 +63,13 @@ export VIRTUAL_ENV_DISABLE_PROMPT=1
 # golang
 export GOPATH=$HOME/gocode
 
-# zsh completions
-fpath=(/usr/local/share/zsh-completions $fpath)
-
 # make sure local libraries are always ahead
 export PATH=/usr/local/bin:$PATH
 
-# tmuxinator
-[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator && source $HOME/.tmuxinator/scripts/tmuxinator_completion
-
 # virtualenvwrapper
 export WORKON_HOME=$HOME/.virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
+export VIRTUALENVWRAPPER_SCRIPT=/usr/local/bin/virtualenvwrapper.sh
+source /usr/local/bin/virtualenvwrapper_lazy.sh
 
 # The next line updates PATH for the Google Cloud SDK.
 export PATH=/Users/pablasso/google-cloud-sdk/bin:$PATH
@@ -85,10 +80,9 @@ alias pg_stop='launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.
 
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+alias rbinit='eval "$(rbenv init -)"'
 
 # docker
-eval "$(docker-machine env default)"
 alias dockerize='eval "$(docker-machine env default)"'
 alias kill-containers='docker kill $(docker ps -q)'
 
@@ -101,8 +95,8 @@ alias switchtoprod='kubectl config use-context aws_k8s-production'
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# Setting ag as the default source for fzf
+# platinum searcher as the default source for fzf
 export FZF_DEFAULT_COMMAND='pt -g ""'
 
-# To apply the command to CTRL-T as well
+# to apply the command to CTRL-T as well
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
