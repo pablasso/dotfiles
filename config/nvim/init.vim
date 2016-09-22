@@ -66,7 +66,7 @@ call plug#end()
 " autocompletion
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#enable_ignore_case = 1
-set completeopt+=noinsert
+let g:SuperTabDefaultCompletionType = "<c-n>"
 
 " global search
 let g:esearch = {
