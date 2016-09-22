@@ -99,3 +99,6 @@ export FZF_DEFAULT_COMMAND='pt -g ""'
 
 # to apply the command to CTRL-T as well
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+
+# workaround around libevent issue with tmux on Sierra: https://github.com/tmux/tmux/issues/475
+export EVENT_NOKQUEUE=1
