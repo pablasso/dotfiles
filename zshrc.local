@@ -47,9 +47,6 @@ export PATH=/usr/local/share/npm/bin:$PATH
 # run local node packages
 alias npm-exec='PATH=$(npm bin):$PATH'
 
-# elasticbeanstalk
-export PATH=~/.elasticbeanstalk/eb/macosx/python2.7/:$PATH
-
 # cache pip-installed packages to avoid re-downloading
 export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
 
