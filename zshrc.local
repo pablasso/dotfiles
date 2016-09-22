@@ -53,7 +53,7 @@ export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
 # google app engine with django paths
 export GAE="/usr/local/google_appengine"
 export PYTHONPATH="$PYTHONPATH:$GAE:$GAE/lib/django-1.5"
-export PATH="$PATH:$GAE/lib/django-1.5/django/bin/"
+export PATH="$PATH:$GAE/lib/django-1.5/django/bin"
 
 # don't show the default prompt for virtualenvs
 export VIRTUAL_ENV_DISABLE_PROMPT=1
