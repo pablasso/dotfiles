@@ -13,6 +13,10 @@ let $NVIM_TUI_ENABLE_TRUE_COLOR=1 " true color
 let g:netrw_dirhistmax = 0 " stop polluting the clipboard
 let g:jsx_ext_required = 0 " highlight jsx on al js files
 
+" focus on the new splits
+set splitbelow
+set splitright
+
 " Pmenu colors
 highlight Pmenu guibg=brown
 highlight PmenuSel gui=reverse guifg=#c5c8c6 guibg=#373b41
