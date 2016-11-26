@@ -10,6 +10,7 @@ set clipboard=unnamed " if there's no clipboard, every yank will be sent to osx'
 set expandtab " use spaces
 
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1 " true color
+set termguicolors " true color
 let g:netrw_dirhistmax = 0 " stop polluting the clipboard
 let g:jsx_ext_required = 0 " highlight jsx on al js files
 
