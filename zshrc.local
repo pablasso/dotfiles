@@ -62,16 +62,13 @@ export VIRTUAL_ENV_DISABLE_PROMPT=1
 export GOPATH=$HOME/gocode
 export PATH=$PATH:$GOPATH/bin
 
-# make sure local libraries are always ahead
-export PATH=/usr/local/bin:$PATH
-
 # virtualenvwrapper
 export WORKON_HOME=$HOME/.virtualenvs
 export VIRTUALENVWRAPPER_SCRIPT=/usr/local/bin/virtualenvwrapper.sh
 source /usr/local/bin/virtualenvwrapper_lazy.sh
 
 # The next line updates PATH for the Google Cloud SDK.
-export PATH=/Users/pablasso/google-cloud-sdk/bin:$PATH
+export PATH=$PATH:/Users/pablasso/google-cloud-sdk/bin
 
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
@@ -105,3 +102,7 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 # workaround around libevent issue with tmux on Sierra: https://github.com/tmux/tmux/issues/475
 export EVENT_NOKQUEUE=1
+
+# make sure local libraries are always ahead
+export PATH=/usr/local/bin:$PATH
+
