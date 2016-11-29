@@ -64,6 +64,7 @@ Plug 'rizzatti/dash.vim'
 Plug 'eugen0329/vim-esearch'
 Plug 'wakatime/vim-wakatime'
 Plug 'tpope/vim-fugitive'
+Plug 'metakirby5/codi.vim'
 " remove this when this gets fixed: https://github.com/eugen0329/vim-esearch/issues/2
 Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 
