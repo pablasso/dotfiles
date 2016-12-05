@@ -68,8 +68,6 @@ Plug 'eugen0329/vim-esearch'
 Plug 'wakatime/vim-wakatime'
 Plug 'tpope/vim-fugitive'
 Plug 'metakirby5/codi.vim'
-" remove this when this gets fixed: https://github.com/eugen0329/vim-esearch/issues/2
-Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 
 call plug#end()
 
@@ -81,7 +79,7 @@ let g:SuperTabDefaultCompletionType = "<c-n>"
 " global search
 let g:esearch = {
   \ 'adapter': 'pt',
-  \ 'backend': 'vimproc',
+  \ 'backend': 'nvim',
   \ 'out': 'win',
   \ 'batch_size': 1000,
   \ 'use': ['visual', 'hlsearch', 'last'],
