@@ -68,6 +68,7 @@ Plug 'eugen0329/vim-esearch'
 Plug 'wakatime/vim-wakatime'
 Plug 'tpope/vim-fugitive'
 Plug 'metakirby5/codi.vim'
+Plug 'solarnz/thrift.vim'
 
 call plug#end()
 
