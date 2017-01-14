@@ -95,7 +95,7 @@ alias nvminit='source "$NVM_DIR/nvm.sh"'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # platinum searcher as the default source for fzf
-export FZF_DEFAULT_COMMAND='pt -g ""'
+export FZF_DEFAULT_COMMAND='pt --hidden --ignore=.git -g ""'
 
 # to apply the command to CTRL-T as well
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
