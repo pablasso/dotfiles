@@ -68,6 +68,7 @@ Plug 'wakatime/vim-wakatime'
 Plug 'tpope/vim-fugitive'
 Plug 'metakirby5/codi.vim'
 Plug 'solarnz/thrift.vim'
+Plug 'jiangmiao/auto-pairs'
 
 call plug#end()
 
