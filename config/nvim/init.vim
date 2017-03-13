@@ -31,8 +31,8 @@ highlight PmenuSel gui=reverse guifg=#c5c8c6 guibg=#373b41
 map ,1 :bp<ENTER>
 " next buffer
 map ,2 :bn<ENTER>
-" close buffer
-map ,w :bd<ENTER>
+" close buffer without closing the window: http://stackoverflow.com/a/8585343/19329
+map ,w :bp<bar>sp<bar>bn<bar>bd<CR>
 " return to last buffer
 nmap <tab> :b#<cr>
 " fuzzy search
