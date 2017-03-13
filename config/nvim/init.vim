@@ -44,6 +44,12 @@ map ,h :noh<cr>
 " Dash.app
 map ,d :Dash<cr>
 
+" resize windows faster: http://vim.wikia.com/wiki/Resize_splits_more_quickly
+nnoremap <silent> <Leader>] :exe "vertical resize " . (winwidth(0) * 3/2)<CR>
+nnoremap <silent> <Leader>[ :exe "vertical resize " . (winwidth(0) * 2/3)<CR>
+nnoremap <silent> <Leader>= :exe "resize " . (winheight(0) * 3/2)<CR>
+nnoremap <silent> <Leader>- :exe "resize " . (winheight(0) * 2/3)<CR>
+
 " PLUGINS =====
 
 call plug#begin('~/.config/nvim/plugged')
