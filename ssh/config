@@ -1,3 +1,4 @@
 Host *
     ServerAliveInterval 120
     ServerAliveCountMax 3
+    UseKeychain yes
