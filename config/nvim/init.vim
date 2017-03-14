@@ -8,6 +8,7 @@ set hidden " buffers hide instead of close when opening new ones without saving 
 set noswapfile " no backup files
 set clipboard=unnamed " if there's no clipboard, every yank will be sent to osx's clipboard
 set expandtab " use spaces
+set inccommand=nosplit " real time changes when replacing text
 
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1 " true color
 set termguicolors " true color
