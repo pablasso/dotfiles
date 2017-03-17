@@ -76,6 +76,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'metakirby5/codi.vim'
 Plug 'solarnz/thrift.vim'
 Plug 'jiangmiao/auto-pairs'
+Plug 'vim-airline/vim-airline'
 
 call plug#end()
 
