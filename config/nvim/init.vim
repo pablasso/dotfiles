@@ -44,6 +44,9 @@ map <leader>/ <plug>NERDCommenterToggle<cr>
 map ,h :noh<cr>
 " Dash.app
 map ,d :Dash<cr>
+" File explorer
+nmap ,n :NERDTreeFind<cr>
+nmap ,m :NERDTreeToggle<cr>
 
 " resize windows faster: http://vim.wikia.com/wiki/Resize_splits_more_quickly
 nnoremap <silent> <Leader>] :exe "vertical resize " . (winwidth(0) * 3/2)<CR>
@@ -75,8 +78,15 @@ Plug 'wakatime/vim-wakatime'
 Plug 'tpope/vim-fugitive'
 Plug 'metakirby5/codi.vim'
 Plug 'vim-airline/vim-airline'
+Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'octref/RootIgnore'
 
 call plug#end()
+
+" file explorer
+let loaded_netrwPlugin=1
+let NERDTreeRespectWildIgnore=1
 
 " autocompletion
 let g:deoplete#enable_at_startup = 1
