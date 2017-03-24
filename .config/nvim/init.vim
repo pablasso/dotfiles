@@ -81,6 +81,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'octref/RootIgnore'
+Plug 'sheerun/vim-polyglot'
 
 call plug#end()
 
