@@ -82,6 +82,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'octref/RootIgnore'
 Plug 'sheerun/vim-polyglot'
 Plug 'itchyny/lightline.vim'
+Plug 'edkolev/tmuxline.vim'
 
 call plug#end()
 
@@ -105,3 +106,11 @@ let g:esearch = {
 \ }
 
 let g:esearch#out#win#open = 'enew'
+
+" lightline
+let g:lightline = {
+  \ 'colorscheme': 'wombat',
+\ }
+
+" tmuxline
+let g:tmuxline_powerline_separators = 0
