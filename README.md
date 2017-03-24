@@ -1,6 +1,6 @@
 # Dotfiles
 
-I try to maintain here only what I'm currently using. Everything else gets deleted. Same goes for the config files themselves
+I try to maintain here only what I'm currently using. Everything else gets deleted.
 
 ## Setup
 
