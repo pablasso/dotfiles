@@ -88,6 +88,7 @@ call plug#end()
 " file explorer
 let loaded_netrwPlugin=1
 let NERDTreeRespectWildIgnore=1
+let NERDTreeShowHidden=1
 
 " autocompletion
 let g:deoplete#enable_at_startup = 1
