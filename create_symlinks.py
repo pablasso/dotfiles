@@ -32,15 +32,18 @@ def _move_path_if_applicable(path):
 
     while not backup_path:
         candidate_path = '{0}.{1}'.format(path, backup_counter)
-     
+
         if os.path.exists(candidate_path):
             backup_counter += 1
             continue
 
         backup_path = candidate_path
+
+    _move_path(path, backup_path)
     
-    print('Existing path detected. Backing up at {0} ..'.format(backup_path)),
-    os.rename(path, backup_path)
+def _move_path(path, new_path):
+    print('.. moving existing path to {0} ..'.format(new_path)),
+    os.rename(path, new_path)
     print(' Done.')
 
 
