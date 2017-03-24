@@ -1,0 +1,12 @@
+# ~/.tmuxinator/pablasso.yml
+
+project_name: pablasso
+project_root: ~/Development
+windows:
+  - pablasso:
+      root: ~/Development/pablasso
+      layout: main-vertical
+      panes:
+        - nvim .
+        - gst
+        - gst

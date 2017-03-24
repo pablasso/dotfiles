@@ -1,0 +1,21 @@
+# ~/.tmuxinator/webrtc.yml
+
+project_name: webrtc
+project_root: ~/Development/oscar-ios
+windows:
+  - ios: gst
+  - node:
+      layout: main-horizontal
+      panes:
+        - cd ../oscar-node && sleep 5 & node server.js
+        - cd ../oscar-node && gst
+  - web:
+      layout: main-horizontal
+      panes:
+        - cd ../oscar-web && rails s
+        - cd ../oscar-web && gst
+  - misc:
+      layout: main-horizontal
+      panes:
+        - mysql.server start && redis-server
+        - cd ../oscar-web && QUEUE=* rake resque:work

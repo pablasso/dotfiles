@@ -9,7 +9,8 @@ DOTFILES = [
     '.gitconfig',
     '.gitignore_global',
     '.ssh/config',
-    '.zprezto'
+    '.zprezto',
+    '.tmuxinator'
 ]
 
 SOURCE = '/Users/pablasso/dev/personal/dotfiles'

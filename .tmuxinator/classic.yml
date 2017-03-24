@@ -1,0 +1,53 @@
+# ~/.tmuxinator/classic.yml
+
+project_name: classic
+project_root: ~/Development
+windows:
+  - roy:
+      root: ~/Development/roy
+      layout: main-horizontal
+      panes:
+        - source bin/activate && fab serve
+        - source bin/activate && gst
+  - moss:
+      root: ~/Development/moss
+      layout: main-horizontal
+      panes:
+        - npm start
+        - gst
+  - jen:
+      root: ~/Development/jen
+      layout: main-horizontal
+      panes:
+        - npm start
+        - gst
+  - api:
+      root: ~/Development/wizeline-api
+      layout: main-horizontal
+      panes:
+        - mysql.server start && source bin/activate && fab serve
+        - source bin/activate && gst
+  - webapp:
+      root: ~/Development/wizeline-webapp
+      layout: main-horizontal
+      panes:
+        - grunt serve
+        - gst
+  - issues:
+      root: ~/Development/wizeline-issues
+      layout: main-horizontal
+      panes:
+        - source bin/activate && fab serve
+        - source bin/activate && gst
+  - website:
+      root: ~/Development/wizeline-website
+      layout: main-horizontal
+      panes:
+        - echo "I don't know how to run this thing"
+        - gst
+  - misc:
+      root: ~/Development/
+      layout: main-horizontal
+      panes:
+        - ls
+        - echo 'Sup'
