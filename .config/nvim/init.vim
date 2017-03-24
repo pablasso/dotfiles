@@ -77,11 +77,11 @@ Plug 'eugen0329/vim-esearch'
 Plug 'wakatime/vim-wakatime'
 Plug 'tpope/vim-fugitive'
 Plug 'metakirby5/codi.vim'
-Plug 'vim-airline/vim-airline'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'octref/RootIgnore'
 Plug 'sheerun/vim-polyglot'
+Plug 'itchyny/lightline.vim'
 
 call plug#end()
 
