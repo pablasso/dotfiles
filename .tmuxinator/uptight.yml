@@ -1,0 +1,10 @@
+# ~/.tmuxinator/uptight.yml
+
+project_name: uptight
+project_root: ~/dev/personal/uptight
+windows:
+  - main:
+      layout: even-horizontal
+      panes:
+        - nvminit && nvm use && git status
+        - nvminit && nvm use && nvim .
