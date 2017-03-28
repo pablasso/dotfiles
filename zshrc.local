@@ -39,6 +39,9 @@ alias sub='open -a "Sublime Text"'
 # atom
 alias atom='open -a "Atom"'
 
+# tmuxinator
+alias mux='tmuxinator'
+
 # default editor
 export VISUAL=nvim
 export EDITOR="$VISUAL"
