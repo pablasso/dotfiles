@@ -114,3 +114,7 @@ let g:lightline = {
 
 " tmuxline
 let g:tmuxline_powerline_separators = 0
+
+" vim-polyglot don't hide quotes automatically
+" this is the worst default feature ever
+let g:vim_json_syntax_conceal = 0
