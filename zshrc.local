@@ -96,7 +96,7 @@ alias decode_id='python -c "import sys;import base64;import uuid;print(uuid.UUID
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
-alias nvminit='source "$NVM_DIR/nvm.sh"'
+alias nvm_init='source "$NVM_DIR/nvm.sh"'
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
