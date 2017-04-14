@@ -83,6 +83,7 @@ Plug 'octref/RootIgnore'
 Plug 'sheerun/vim-polyglot'
 Plug 'itchyny/lightline.vim'
 Plug 'edkolev/tmuxline.vim'
+Plug 'itspriddle/vim-marked'
 
 call plug#end()
 
