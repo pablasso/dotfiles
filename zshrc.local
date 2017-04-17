@@ -67,6 +67,9 @@ export VIRTUAL_ENV_DISABLE_PROMPT=1
 export GOPATH=$HOME/gocode
 export PATH=$PATH:$GOPATH/bin
 
+# pyenv
+alias pyenv_init="$(pyenv init -)"
+
 # virtualenvwrapper
 export VIRTUALENVWRAPPER_PYTHON=/usr/local/opt/python/bin/python
 export WORKON_HOME=$HOME/.virtualenvs
