@@ -4,7 +4,7 @@ import os
 
 # this could be read from the directory but I'd rather be specific.
 DOTFILES = [
-    '.config',
+    '.config/nvim/init.vim',
     '.tmux.conf',
     '.gitconfig',
     '.gitignore_global',
