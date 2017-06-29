@@ -1,35 +1,41 @@
 # ~/.tmuxinator/wizeline.yml
 
 project_name: wizeline
-project_root: ~/Development
+project_root: ~/dev/wizeline
 windows:
+  - main:
+      root: ~/dev/wizeline
+      layout: main-vertical
+      panes:
+        - dockerize
+        - dockerize
   - hubble:
-      root: ~/Development/hubble
+      root: ~/dev/wizeline/hubble
       layout: main-vertical
       panes:
         - dockerize && workon hubble && gst
-        - dockerize && nvim .
+        - dockerize && nvim
   - montgomery:
-      root: ~/Development/montgomery
+      root: ~/dev/wizeline/montgomery
       layout: main-vertical
       panes:
         - dockerize && workon montgomery && gst
-        - dockerize && nvim .
+        - dockerize && nvim
   - assemble:
-      root: ~/Development/assemble
+      root: ~/dev/wizeline/assemble
       layout: main-vertical
       panes:
         - dockerize && workon assemble && gst
-        - dockerize && nvim .
+        - dockerize && nvim
   - cerberus:
-      root: ~/Development/cerberus
+      root: ~/dev/wizeline/cerberus
       layout: main-vertical
       panes:
         - dockerize && workon cerberus && gst
-        - dockerize && nvim .
-  - bender:
-      root: ~/Development/bender
+        - dockerize && nvim
+  - argonath:
+      root: ~/dev/wizeline/argonath
       layout: main-vertical
       panes:
-        - dockerize && gst
-        - dockerize && gst
+        - dockerize && workon argonath && gst
+        - dockerize && nvim
