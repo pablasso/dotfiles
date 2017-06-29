@@ -8,11 +8,11 @@ windows:
       root: ~/dev/wizeline/wizeline-api
       layout: even-vertical
       panes:
-        - nvim .
+        - nvim
         - mysql.server start && source bin/activate
   - wizeline-webapp:
       root: ~/dev/wizeline/wizeline-webapp
       layout: even-vertical
       panes:
-        - nvm_init && nvm use && nvim .
+        - nvm_init && nvm use && nvim
         - source bin/activate && nvm_init && nvm use
