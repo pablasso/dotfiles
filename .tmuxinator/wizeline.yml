@@ -39,3 +39,9 @@ windows:
       panes:
         - dockerize && workon argonath && gst
         - dockerize && nvim
+  - jaimito:
+      root: ~/dev/wizeline/jaimito
+      layout: main-vertical
+      panes:
+        - dockerize && workon jaimito && gst
+        - dockerize && nvim
