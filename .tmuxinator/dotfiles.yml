@@ -1,0 +1,8 @@
+project_name: dotfiles
+project_root: ~/dev/personal/dotfiles
+windows:
+  - dotfiles:
+      layout: main-vertical
+      panes:
+        - nvim
+        - git status
