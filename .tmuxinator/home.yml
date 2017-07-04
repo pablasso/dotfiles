@@ -1,0 +1,11 @@
+# layout from: tmux list-windows
+
+project_name: home
+project_root: ~/dev/personal/home
+windows:
+  - main:
+      layout: 2f9f,213x70,0,0{126x70,0,0,71,86x70,127,0[86x29,127,0,72,86x40,127,30,73]}
+      panes:
+        - nvm_init && nvim
+        - nvm_init && npm run develop
+        - nvm_init && git status
