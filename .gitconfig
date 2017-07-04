@@ -1,6 +1,7 @@
 [user]
   name = Juan Pablo Ortiz
   email = me@pablasso.com
+  signingkey = 12C610E2
 [core]
   excludesfile = /Users/pablasso/.gitignore_global
   editor = nvim
@@ -12,3 +13,5 @@
   default = simple
 [credential]
   helper = osxkeychain
+[commit]
+	gpgsign = true
