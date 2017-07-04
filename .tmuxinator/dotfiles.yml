@@ -4,5 +4,5 @@ windows:
   - dotfiles:
       layout: main-vertical
       panes:
-        - nvim
         - git status
+        - nvim
