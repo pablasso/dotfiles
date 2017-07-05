@@ -5,8 +5,8 @@ project_root: ~/dev/wizeline
 windows:
   - main:
       root: ~/dev/wizeline
-      layout: even-vertical
       panes:
+        - dockerize
         - dockerize
         - dockerize
   - hubble:
