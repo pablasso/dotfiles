@@ -1,7 +1,7 @@
 project_name: dotfiles
 project_root: ~/dev/personal/dotfiles
 windows:
-  - dotfiles:
+  - main:
       layout: main-vertical
       panes:
         - git status
