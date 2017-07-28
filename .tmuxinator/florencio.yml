@@ -1,0 +1,8 @@
+project_name: florencio
+project_root: ~/dev/personal/florencio
+windows:
+  - main:
+      layout: main-vertical
+      panes:
+        - pyenv_init && workon florencio && git status
+        - pyenv_init && workon florencio && nvim
