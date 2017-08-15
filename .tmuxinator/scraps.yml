@@ -1,0 +1,8 @@
+project_name: scraps
+project_root: ~/dev/personal/scraps
+windows:
+  - screeps:
+      layout: main-vertical
+      panes:
+        - nvm_init && nvm use && gst
+        - nvim .
