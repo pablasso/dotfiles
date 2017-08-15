@@ -85,6 +85,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'edkolev/tmuxline.vim'
 Plug 'itspriddle/vim-marked'
 Plug 'junegunn/goyo.vim'
+Plug 'sbdchd/neoformat'
 
 call plug#end()
 
