@@ -5,4 +5,4 @@ windows:
       layout: main-vertical
       panes:
         - nvm_init && nvm use && gst
-        - nvim .
+        - nvim
