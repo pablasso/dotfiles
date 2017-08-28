@@ -87,6 +87,7 @@ Plug 'edkolev/tmuxline.vim'
 Plug 'itspriddle/vim-marked'
 Plug 'junegunn/goyo.vim'
 Plug 'sbdchd/neoformat'
+Plug 'reasonml-editor/vim-reason'
 
 call plug#end()
 
