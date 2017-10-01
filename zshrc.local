@@ -81,6 +81,7 @@ export PATH=$PATH:/Users/pablasso/google-cloud-sdk/bin
 
 # docker
 alias kill_containers='docker kill $(docker ps -q)'
+alias stop_containers='docker stop $(docker ps -q)'
 alias delete_all_containers='docker rm $(docker ps -a -q)'
 alias delete_all_images='docker rmi $(docker images -q)'
 
