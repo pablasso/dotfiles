@@ -80,7 +80,6 @@ source /usr/local/bin/virtualenvwrapper_lazy.sh
 export PATH=$PATH:/Users/pablasso/google-cloud-sdk/bin
 
 # docker
-alias dockerize='eval "$(docker-machine env default)"'
 alias kill_containers='docker kill $(docker ps -q)'
 alias delete_all_containers='docker rm $(docker ps -a -q)'
 alias delete_all_images='docker rmi $(docker images -q)'
