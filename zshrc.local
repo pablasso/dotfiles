@@ -24,6 +24,9 @@ alias gd='git diff'
 alias gdt='git difftool'
 alias glo='git log'
 
+# misc
+alias netlisten="sudo lsof -PiTCP -sTCP:LISTEN"
+
 # tmux
 alias tmux="TERM=screen-256color-bce tmux"
 
