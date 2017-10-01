@@ -6,42 +6,36 @@ windows:
   - main:
       root: ~/dev/wizeline
       panes:
-        - dockerize
-        - dockerize
-        - dockerize
+        - docker ps
+        - docker ps 
+        - docker ps
   - hubble:
       root: ~/dev/wizeline/hubble
       layout: main-vertical
       panes:
-        - dockerize && workon hubble && gst
-        - dockerize && nvim
+        - workon hubble && gst
+        - nvim
   - montgomery:
       root: ~/dev/wizeline/montgomery
       layout: main-vertical
       panes:
-        - dockerize && workon montgomery && gst
-        - dockerize && nvim
-  - assemble:
-      root: ~/dev/wizeline/assemble
-      layout: main-vertical
-      panes:
-        - dockerize && workon assemble && gst
-        - dockerize && nvim
+        - workon montgomery && gst
+        - nvim
   - cerberus:
       root: ~/dev/wizeline/cerberus
       layout: main-vertical
       panes:
-        - dockerize && workon cerberus && gst
-        - dockerize && nvim
+        - workon cerberus && gst
+        - nvim
   - argonath:
       root: ~/dev/wizeline/argonath
       layout: main-vertical
       panes:
-        - dockerize && workon argonath && gst
-        - dockerize && nvim
+        - workon argonath && gst
+        - nvim
   - jaimito:
       root: ~/dev/wizeline/jaimito
       layout: main-vertical
       panes:
-        - dockerize && workon jaimito && gst
-        - dockerize && nvim
+        - workon jaimito && gst
+        - nvim
