@@ -7,7 +7,7 @@ windows:
       root: ~/dev/wizeline
       panes:
         - docker ps
-        - docker ps 
+        - watch docker ps 
         - docker ps
   - hubble:
       root: ~/dev/wizeline/hubble
