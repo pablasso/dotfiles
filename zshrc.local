@@ -24,6 +24,9 @@ alias gd='git diff'
 alias gdt='git difftool'
 alias glo='git log'
 
+# tree with gitignore
+alias itree='tree --prune -I $(cat .gitignore | egrep -v "^#.*$|^[[:space:]]*$" | tr "\\n" "|")'
+
 # misc
 alias netlisten="sudo lsof -PiTCP -sTCP:LISTEN"
 
