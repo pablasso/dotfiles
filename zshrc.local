@@ -1,4 +1,4 @@
-# source this in .zprezto/runcoms/zshrc
+# I'm using zplug now. Set it up first with homebrew and then source this file in ~/.zshrc
 
 # set locale
 export LC_ALL=en_US.UTF-8
