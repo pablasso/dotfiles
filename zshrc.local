@@ -1,7 +1,7 @@
 # I'm using zplug now. Set it up first with homebrew and then source this file in ~/.zshrc
 
 # theme
-zplug 'dracula/zsh', as:theme
+zplug 'samtgarson/zsh-pure', as:theme
 
 # set locale
 export LC_ALL=en_US.UTF-8
