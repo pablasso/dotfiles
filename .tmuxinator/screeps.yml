@@ -1,5 +1,5 @@
-project_name: scraps
-project_root: ~/dev/personal/scraps
+project_name: screeps
+project_root: ~/dev/personal/screeps
 windows:
   - screeps:
       layout: main-vertical
