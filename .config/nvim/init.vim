@@ -1,5 +1,4 @@
 syntax enable
-colorscheme onedark
 filetype plugin indent on
 
 set ruler " show position of cursor
@@ -63,6 +62,7 @@ function! DoRemote(arg)
   UpdateRemotePlugins
 endfunction
 
+Plug 'connorholyday/vim-snazzy'
 Plug 'airblade/vim-gitgutter'
 Plug 'bling/vim-bufferline'
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
@@ -90,6 +90,9 @@ Plug 'sbdchd/neoformat'
 Plug 'reasonml-editor/vim-reason'
 
 call plug#end()
+
+" theme
+colorscheme snazzy
 
 " file explorer
 let loaded_netrwPlugin=1

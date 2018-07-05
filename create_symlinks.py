@@ -9,7 +9,6 @@ DOTFILES = [
     '.gitconfig',
     '.gitignore_global',
     '.ssh/config',
-    '.zprezto',
     '.tmuxinator'
 ]
 
