@@ -103,17 +103,6 @@ setopt appendhistory
 setopt sharehistory
 setopt incappendhistory
 
-# wizeline
-export WIZELINE_WEBAPP_DONT_OPEN=1
-export WIZELINE_API_NOTHREADSAFE=1
-alias switchtoint='kubectl config use-context aws_k8s-internal'
-alias switchtodev='kubectl config use-context aws_k8s-production'
-alias switchtoprod='kubectl config use-context alpha.thewize.co'
-alias kd='kubectl --namespace="development" '
-alias kp='kubectl '
-alias encode_id='python -c "import sys;import base64;import uuid;print(base64.urlsafe_b64encode((uuid.UUID(sys.argv[1]).bytes))[:-2])"'
-alias decode_id='python -c "import sys;import base64;import uuid;print(uuid.UUID(bytes=base64.urlsafe_b64decode(\"{}==\".format(sys.argv[1]))))"'
-
 # nvm
 export NVM_DIR="$HOME/.nvm"
 alias nvm_init='source "$NVM_DIR/nvm.sh"'
