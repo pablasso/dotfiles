@@ -15,6 +15,10 @@ set termguicolors " true color
 let g:netrw_dirhistmax = 0 " stop polluting the clipboard
 let g:jsx_ext_required = 0 " highlight jsx on al js files
 
+" nerdtree
+let NERDTreeMinimalUI=1
+let g:NERDTreeMouseMode=3
+
 " text expands
 iabbrev trace; import ipdb;ipdb.set_trace()
 
