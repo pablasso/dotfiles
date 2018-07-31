@@ -95,6 +95,14 @@ alias stop_containers='docker stop $(docker ps -q)'
 alias delete_all_containers='docker rm $(docker ps -a -q)'
 alias delete_all_images='docker rmi $(docker images -q)'
 
+# history
+HISTSIZE=100000 # how many lines of history to keep in memory
+HISTFILE=~/.zsh_history
+SAVEHIST=100000 # number of history entries to save to disk
+setopt appendhistory
+setopt sharehistory
+setopt incappendhistory
+
 # wizeline
 export WIZELINE_WEBAPP_DONT_OPEN=1
 export WIZELINE_API_NOTHREADSAFE=1
