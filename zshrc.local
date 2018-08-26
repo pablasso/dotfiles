@@ -11,6 +11,9 @@ export LANG=en_US.UTF-8
 # disable auto naming of windows.
 DISABLE_AUTO_TITLE=true
 
+# autocomplete: case insensitive, menu highlight
+zstyle ':completion:*' menu select
+
 # disable auto-correct
 unsetopt correct_all
 unsetopt correct
