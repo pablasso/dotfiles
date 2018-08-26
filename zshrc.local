@@ -11,9 +11,10 @@ export LANG=en_US.UTF-8
 # disable auto naming of windows.
 DISABLE_AUTO_TITLE=true
 
-# autocomplete: case insensitive, menu highlight
-zstyle ':completion:*' menu select
-
+# autocomplete case insensitive
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+# autocomplete with menu highlight
+zstyle ':completion:*:*:*:*:*' menu select
 # autocomplete: shift-tab to go back in the menu
 bindkey '^[[Z' reverse-menu-complete
 
