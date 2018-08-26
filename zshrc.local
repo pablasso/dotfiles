@@ -14,6 +14,9 @@ DISABLE_AUTO_TITLE=true
 # autocomplete: case insensitive, menu highlight
 zstyle ':completion:*' menu select
 
+# autocomplete: shift-tab to go back in the menu
+bindkey '^[[Z' reverse-menu-complete
+
 # disable auto-correct
 unsetopt correct_all
 unsetopt correct
