@@ -7258,11 +7258,11 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>1570 788 700 526 0 0 3840 1577 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>1152 812 796 486 0 0 3840 1577 </string>
+	<string>1026 791 796 486 0 0 3840 1577 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>1280 0 2560 1577 0 0 3840 1577 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>0 1 1396 876 0 0 1920 1057 </string>
+	<string>0 480 570 400 0 0 3840 1577 </string>
 	<key>NeverWarnAboutShortLivedSessions_5330EE18-6C17-4B4C-90D5-FCA6AA0383A5</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_5330EE18-6C17-4B4C-90D5-FCA6AA0383A5_selection</key>
@@ -9105,7 +9105,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-08-31T01:41:13Z</date>
+	<date>2018-08-31T02:01:22Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -9120,10 +9120,12 @@
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
 	<real>0.40000000596046448</real>
+	<key>SwitchPaneModifier</key>
+	<integer>9</integer>
 	<key>SwitchTabModifier</key>
 	<integer>4</integer>
 	<key>SwitchWindowModifier</key>
-	<integer>6</integer>
+	<integer>9</integer>
 	<key>TabStyle</key>
 	<integer>1</integer>
 	<key>TabViewType</key>
