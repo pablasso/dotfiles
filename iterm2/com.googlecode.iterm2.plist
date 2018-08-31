@@ -7286,9 +7286,9 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>349 263 700 526 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>392 307 796 473 0 0 1920 1057 </string>
+	<string>1386 423 1016 512 0 0 3840 1577 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>376 212 1127 634 0 0 1920 1057 </string>
+	<string>1280 0 2560 1577 0 0 3840 1577 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 1 1396 876 0 0 1920 1057 </string>
 	<key>NeverWarnAboutShortLivedSessions_5330EE18-6C17-4B4C-90D5-FCA6AA0383A5</key>
@@ -7720,6 +7720,13 @@
 					<key>Text</key>
 					<string>0x7f</string>
 				</dict>
+				<key>0x7f-0x20000</key>
+				<dict>
+					<key>Action</key>
+					<integer>10</integer>
+					<key>Text</key>
+					<string>d</string>
+				</dict>
 				<key>0xf700-0x220000</key>
 				<dict>
 					<key>Action</key>
@@ -7797,6 +7804,20 @@
 					<key>Text</key>
 					<string>[1;6D</string>
 				</dict>
+				<key>0xf702-0x280000</key>
+				<dict>
+					<key>Action</key>
+					<integer>10</integer>
+					<key>Text</key>
+					<string>b</string>
+				</dict>
+				<key>0xf702-0x300000</key>
+				<dict>
+					<key>Action</key>
+					<integer>11</integer>
+					<key>Text</key>
+					<string>0x01</string>
+				</dict>
 				<key>0xf703-0x220000</key>
 				<dict>
 					<key>Action</key>
@@ -7817,6 +7838,20 @@
 					<integer>10</integer>
 					<key>Text</key>
 					<string>[1;6C</string>
+				</dict>
+				<key>0xf703-0x280000</key>
+				<dict>
+					<key>Action</key>
+					<integer>10</integer>
+					<key>Text</key>
+					<string>f</string>
+				</dict>
+				<key>0xf703-0x300000</key>
+				<dict>
+					<key>Action</key>
+					<integer>11</integer>
+					<key>Text</key>
+					<string>0x05</string>
 				</dict>
 				<key>0xf704-0x20000</key>
 				<dict>
@@ -9018,7 +9053,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-07-05T16:46:09Z</date>
+	<date>2018-08-29T08:28:07Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
