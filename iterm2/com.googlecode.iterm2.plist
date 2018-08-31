@@ -7282,11 +7282,11 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame SUStatusFrame</key>
-	<string>499 561 400 129 0 0 1440 877 </string>
+	<string>1720 1086 400 129 0 0 3840 1577 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>349 263 700 526 0 0 1440 877 </string>
+	<string>1570 788 700 526 0 0 3840 1577 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>1207 445 796 473 0 0 3840 1577 </string>
+	<string>1317 529 796 486 0 0 3840 1577 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>1280 0 2560 1577 0 0 3840 1577 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
@@ -8983,6 +8983,80 @@
 	<integer>0</integer>
 	<key>NoSyncPermissionToShowTip</key>
 	<false/>
+	<key>NoSyncRecordedVariableNames</key>
+	<dict>
+		<key>1</key>
+		<array>
+			<string>session.jobName</string>
+			<string>session.id</string>
+			<string>session.profileName</string>
+			<string>session.name</string>
+			<string>session.terminalIconName</string>
+			<string>session.tmuxClientName</string>
+			<string>session.termid</string>
+			<string>session.triggerName</string>
+			<string>session.tmuxWindowPane</string>
+			<string>session.hostname</string>
+			<string>session.username</string>
+			<string>session.tmuxStatusRight</string>
+			<string>session.tmuxRole</string>
+			<string>session.path</string>
+			<string>session.creationTimeString</string>
+			<string>session.rows</string>
+			<string>session.tmuxWindowTitle</string>
+			<string>session.autoLogId</string>
+			<string>session.tty</string>
+			<string>session.autoName</string>
+			<string>session.terminalWindowName</string>
+			<string>iterm2</string>
+			<string>session.jobPid</string>
+			<string>session.tmuxStatusLeft</string>
+			<string>session.lastCommand</string>
+			<string>session.pid</string>
+			<string>session.presentationName</string>
+			<string>session.columns</string>
+		</array>
+		<key>16</key>
+		<array>
+			<string>titleOverride</string>
+			<string>currentTab.currentSession.session.columns</string>
+			<string>currentTab.currentSession.session.terminalWindowName</string>
+			<string>currentTab</string>
+			<string>currentTab.currentSession</string>
+			<string>currentTab.currentSession.session.pid</string>
+			<string>currentTab.currentSession.session.autoName</string>
+			<string>currentTab.currentSession.session.tty</string>
+			<string>currentTab.currentSession.session.presentationName</string>
+			<string>currentTab.currentSession.session.name</string>
+			<string>currentTab.currentSession.session.terminalIconName</string>
+			<string>currentTab.currentSession.session.jobName</string>
+			<string>currentTab.currentSession.session.rows</string>
+			<string>iterm2</string>
+			<string>currentTab.currentSession.session.jobPid</string>
+		</array>
+		<key>2</key>
+		<array>
+			<string>currentSession</string>
+			<string>titleOverride</string>
+			<string>currentSession.session.pid</string>
+			<string>currentSession.session.autoName</string>
+			<string>currentSession.session.name</string>
+			<string>currentSession.session.rows</string>
+			<string>currentSession.session.terminalWindowName</string>
+			<string>currentSession.session.jobName</string>
+			<string>currentSession.session.tty</string>
+			<string>iterm2</string>
+			<string>tmuxWindow</string>
+			<string>currentSession.session.presentationName</string>
+			<string>currentSession.session.terminalIconName</string>
+			<string>currentSession.session.jobPid</string>
+			<string>currentSession.session.columns</string>
+		</array>
+		<key>4</key>
+		<array>
+			<string>pid</string>
+		</array>
+	</dict>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>511933942.04771101</real>
 	<key>NoSyncTipsToNotShow</key>
@@ -9055,11 +9129,11 @@
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/nightly.xml?shard=44</string>
+	<string>https://iterm2.com/appcasts/testing.xml?shard=44</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-08-31T01:28:00Z</date>
+	<date>2018-08-31T01:41:13Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -9115,7 +9189,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.2.20180130-nightly</string>
+	<string>3.2.0</string>
 	<key>moveToApplicationsFolderAlertSuppress</key>
 	<true/>
 </dict>
