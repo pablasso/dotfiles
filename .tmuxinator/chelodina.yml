@@ -1,0 +1,8 @@
+project_name: chelodina
+project_root: ~/dev/personal/chelodina
+windows:
+  - main:
+      layout: main-vertical
+      panes:
+        - pyenv_init
+        - pyenv_init && nvim
