@@ -18,6 +18,14 @@ zstyle ':completion:*:*:*:*:*' menu select
 # autocomplete: shift-tab to go back in the menu
 bindkey '^[[Z' reverse-menu-complete
 
+# navigation shortcuts - make sure these escape sequences are sent in your terminal application
+bindkey "^[fw" forward-word
+bindkey "^[bw" backward-word
+bindkey '^[beg' beginning-of-line
+bindkey '^[end' end-of-line
+bindkey '^[dw' kill-word
+bindkey '^[dwb' backward-kill-word
+
 # disable auto-correct
 unsetopt correct_all
 unsetopt correct
