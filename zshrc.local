@@ -2,7 +2,8 @@
 source ~/.zplug/init.zsh
 
 # theme
-zplug 'samtgarson/zsh-pure', as:theme
+zplug mafredri/zsh-async, from:github
+zplug sindresorhus/pure, use:pure.zsh, from:github, as:theme
 
 # set locale
 export LC_ALL=en_US.UTF-8
