@@ -16,9 +16,9 @@ let g:netrw_dirhistmax = 0 " stop polluting the clipboard
 let g:jsx_ext_required = 0 " highlight jsx on al js files
 
 " python config for plugins
-let g:python_host_prog = '/usr/bin/python'
-let g:python3_host_prog = '/Users/pablasso/.virtualenvs/neovim3/bin/python'
-let g:black_virtualenv = '/Users/pablasso/.virtualenvs/neovim3'
+let g:python_host_prog = '/Users/pablasso/.pyenv/versions/neovim2/bin/python'
+let g:python3_host_prog = '/Users/pablasso/.pyenv/versions/neovim3/bin/python'
+let g:black_virtualenv = '/Users/pablasso/.pyenv/versions/neovim3'
 " nerdtree
 let NERDTreeMinimalUI=1
 let g:NERDTreeMouseMode=3
