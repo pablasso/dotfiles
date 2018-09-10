@@ -90,9 +90,6 @@ export PATH="$PATH:$GAE/lib/django-1.5/django/bin"
 export GOPATH=$HOME/gocode
 export PATH=$PATH:$GOPATH/bin
 
-# pyenv
-alias pyenv_init="$(pyenv init -)"
-
 # virtualenvwrapper
 export VIRTUALENVWRAPPER_PYTHON=/usr/local/opt/python/bin/python
 export WORKON_HOME=$HOME/.virtualenvs
@@ -134,6 +131,10 @@ export EVENT_NOKQUEUE=1
 
 # make sure local libraries are always ahead
 export PATH=/usr/local/bin:$PATH
+
+# pyenv
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
 # always load zplug at the end
 zplug load
