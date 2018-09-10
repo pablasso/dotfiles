@@ -66,14 +66,10 @@ nnoremap <silent> <Leader>- :exe "resize " . (winheight(0) * 9/10)<CR>
 
 call plug#begin('~/.config/nvim/plugged')
 
-function! DoRemote(arg)
-  UpdateRemotePlugins
-endfunction
-
 Plug 'connorholyday/vim-snazzy'
 Plug 'airblade/vim-gitgutter'
 Plug 'bling/vim-bufferline'
-Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'ervandew/supertab'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'editorconfig/editorconfig-vim'
