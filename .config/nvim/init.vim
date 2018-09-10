@@ -73,7 +73,6 @@ Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
 Plug 'ervandew/supertab'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'editorconfig/editorconfig-vim'
-Plug 'nvie/vim-flake8'
 Plug 'scrooloose/nerdcommenter'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
@@ -92,6 +91,7 @@ Plug 'itspriddle/vim-marked'
 Plug 'junegunn/goyo.vim'
 Plug 'sbdchd/neoformat'
 Plug 'reasonml-editor/vim-reason'
+Plug 'ambv/black'
 
 call plug#end()
 
