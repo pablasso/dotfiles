@@ -2,7 +2,8 @@ project_name: chelodina
 project_root: ~/dev/personal/chelodina
 windows:
   - main:
-      layout: main-vertical
+      layout: main-horizontal
       panes:
-        - pyenv_init
-        - pyenv_init && nvim
+        - pipenv shell
+        - nvim
+        - pipenv shell && pytest-watch
