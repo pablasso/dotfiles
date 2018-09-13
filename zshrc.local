@@ -27,6 +27,9 @@ bindkey '^[end' end-of-line
 bindkey '^[dw' kill-word
 bindkey '^[dwb' backward-kill-word
 
+# insert last argument
+bindkey '\e.' insert-last-word
+
 # disable auto-correct
 unsetopt correct_all
 unsetopt correct
