@@ -55,6 +55,8 @@ map ,d :Dash<cr>
 " File explorer
 nmap ,n :NERDTreeFind<cr>
 nmap ,m :NERDTreeToggle<cr>
+" python formatter
+nmap ,f :Black<cr>
 
 " resize windows faster: http://vim.wikia.com/wiki/Resize_splits_more_quickly
 nnoremap <silent> <Leader>] :exe "vertical resize " . (winwidth(0) * 10/9)<CR>
