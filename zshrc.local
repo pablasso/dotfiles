@@ -86,6 +86,9 @@ export GAE="/usr/local/google_appengine"
 export PYTHONPATH="$PYTHONPATH:$GAE:$GAE/lib/django-1.5"
 export PATH="$PATH:$GAE/lib/django-1.5/django/bin"
 
+# virtualenvs home
+export WORKON_HOME=$HOME/.virtualenvs
+
 # golang
 export GOPATH=$HOME/gocode
 export PATH=$PATH:$GOPATH/bin
