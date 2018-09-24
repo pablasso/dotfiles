@@ -91,9 +91,6 @@ export WORKON_HOME=$HOME/.virtualenvs
 export GOPATH=$HOME/gocode
 export PATH=$PATH:$GOPATH/bin
 
-# The next line updates PATH for the Google Cloud SDK.
-export PATH=$PATH:/Users/pablasso/google-cloud-sdk/bin
-
 # docker
 alias kill_containers='docker kill $(docker ps -q)'
 alias stop_containers='docker stop $(docker ps -q)'
