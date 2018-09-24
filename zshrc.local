@@ -84,11 +84,6 @@ alias npm-exec='PATH=$(npm bin):$PATH'
 # cache pip-installed packages to avoid re-downloading
 export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
 
-# google app engine with django paths
-export GAE="/usr/local/google_appengine"
-export PYTHONPATH="$PYTHONPATH:$GAE:$GAE/lib/django-1.5"
-export PATH="$PATH:$GAE/lib/django-1.5/django/bin"
-
 # virtualenvs home
 export WORKON_HOME=$HOME/.virtualenvs
 
