@@ -1,0 +1,29 @@
+# ~/.tmuxinator/wizeline.yml
+
+project_name: anubis
+project_root: ~/dev/wizeline/anubis
+windows:
+  - main:
+      root: ~/dev/wizeline/anubis
+      layout: main-vertical
+      panes:
+        - docker-compose up
+        - gst
+  - backend:
+      root: ~/dev/wizeline/anubis/backend
+      layout: main-vertical
+      panes:
+        - pipenv shell && gst
+        - nvim
+  - frontend:
+      root: ~/dev/wizeline/anubis/frontend-monolith
+      layout: main-vertical
+      panes:
+        - gst
+        - nvim
+  - infra:
+      root: ~/dev/wizeline/anubis/infra
+      layout: main-vertical
+      panes:
+        - gst
+        - nvim
