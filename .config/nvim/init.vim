@@ -94,6 +94,7 @@ Plug 'junegunn/goyo.vim'
 Plug 'sbdchd/neoformat'
 Plug 'reasonml-editor/vim-reason'
 Plug 'ambv/black'
+Plug 'tpope/vim-vinegar'
 
 call plug#end()
 
