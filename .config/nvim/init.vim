@@ -57,6 +57,11 @@ nmap ,n :NERDTreeFind<cr>
 nmap ,m :NERDTreeToggle<cr>
 " python formatter
 nmap ,f :Black<cr>
+" splits movement
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
 " resize windows faster: http://vim.wikia.com/wiki/Resize_splits_more_quickly
 nnoremap <silent> <Leader>] :exe "vertical resize " . (winwidth(0) * 10/9)<CR>
