@@ -57,6 +57,8 @@ nmap ,n :NERDTreeFind<cr>
 nmap ,m :NERDTreeToggle<cr>
 " python formatter
 nmap ,f :Black<cr>
+" search with ack.vim
+nmap ,s :Ack 
 " splits movement
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
@@ -84,7 +86,6 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'rizzatti/dash.vim'
-Plug 'eugen0329/vim-esearch'
 Plug 'wakatime/vim-wakatime'
 Plug 'tpope/vim-fugitive'
 Plug 'metakirby5/codi.vim'
@@ -100,6 +101,7 @@ Plug 'sbdchd/neoformat'
 Plug 'reasonml-editor/vim-reason'
 Plug 'ambv/black'
 Plug 'tpope/vim-vinegar'
+Plug 'mileszs/ack.vim'
 
 call plug#end()
 
@@ -116,16 +118,9 @@ let g:deoplete#enable_at_startup = 1
 let g:deoplete#enable_ignore_case = 1
 let g:SuperTabDefaultCompletionType = "<c-n>"
 
-" global search
-let g:esearch = {
-  \ 'adapter': 'pt',
-  \ 'backend': 'nvim',
-  \ 'out': 'win',
-  \ 'batch_size': 1000,
-  \ 'use': ['visual', 'hlsearch', 'last'],
-\ }
-
-let g:esearch#out#win#open = 'enew'
+" acv.vim
+let g:ackprg = 'pt -i --nogroup --nocolor --column'
+let g:ackhighlight = 1
 
 " lightline
 let g:lightline = {
