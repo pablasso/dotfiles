@@ -32,6 +32,8 @@
 
 ;; generic
 (setq backup-directory-alist `(("." . "~/.saves")))
+(setq mac-option-modifier 'meta)
+(setq mac-command-modifier 'super)
 
 ;; packages
 (use-package doom-themes
