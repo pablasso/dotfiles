@@ -21,6 +21,17 @@
  ;; If there is more than one, they won't work right.
  )
 
+;; visual
+(menu-bar-mode -1)
+(tool-bar-mode -1)
+(scroll-bar-mode -1)
+(global-linum-mode t)
+(show-paren-mode)
+
+;; generic
+(setq backup-directory-alist `(("." . "~/.saves")))
+
+;; packages
 (use-package doom-themes
   :ensure t
   :config
