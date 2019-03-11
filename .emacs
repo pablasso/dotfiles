@@ -13,7 +13,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages (quote (doom-theme doom-themes evil tc use-package))))
+ '(package-selected-packages
+   (quote
+    (projectile doom-theme doom-themes evil tc use-package))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -41,3 +43,11 @@
   :ensure t
   :config
   (evil-mode 1))
+
+(use-package projectile
+  :ensure t
+  :config
+  (define-key projectile-mode-map (kbd "s-p") 'projectile-command-map)
+  (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
+  (setq projectile-project-search-path '("~/dev/personal/" "~/dev/topfunnel/" "~/dev/wizeline/"))
+  (projectile-mode +1))
