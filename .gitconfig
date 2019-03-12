@@ -5,7 +5,6 @@
 [core]
   excludesfile = /Users/pablasso/.gitignore_global
   editor = nvim
-  pager = diff-so-fancy | less --tabs=4 -RF -+X
 [color]
   ui = true
 [github]
@@ -15,4 +14,4 @@
 [credential]
   helper = osxkeychain
 [commit]
-  gpgsign = true
+  gpgsign = false
