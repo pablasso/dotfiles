@@ -63,6 +63,7 @@
   :config
   (global-set-key (kbd "M-x") 'counsel-M-x)
   (global-set-key (kbd "C-c s") 'counsel-ag)
+  (defalias #'forward-evil-word #'forward-evil-symbol) ; select full words like vim does with w
   (ivy-mode 1))
 
 (use-package counsel
