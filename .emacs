@@ -15,7 +15,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (hlinum company robe evil-magit magit neotree ivy-rich counsel ivy helm projectile doom-theme doom-themes evil tc use-package))))
+    (dash-at-point hlinum company robe evil-magit magit neotree ivy-rich counsel ivy helm projectile doom-theme doom-themes evil tc use-package))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -136,3 +136,8 @@
   :config
   (push 'company-robe company-backends)
   (add-hook 'after-init-hook 'global-company-mode))
+
+(use-package dash-at-point
+  :ensure t
+  :config
+  :bind (("C-c d" . dash-at-point)))
