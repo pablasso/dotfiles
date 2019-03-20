@@ -15,7 +15,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (dash-at-point hlinum company robe evil-magit magit neotree ivy-rich counsel ivy helm projectile doom-theme doom-themes evil tc use-package))))
+    (elpy dash-at-point hlinum company robe evil-magit magit neotree ivy-rich counsel ivy helm projectile doom-theme doom-themes evil tc use-package))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -127,7 +127,7 @@
 
 (use-package robe
   :ensure t
-  :bind ("C-c ." . robe-jump)
+  :bind ("C-c ," . robe-jump)
   :config
   (add-hook 'ruby-mode-hook 'robe-mode))
 
@@ -141,3 +141,9 @@
   :ensure t
   :config
   :bind (("C-c d" . dash-at-point)))
+
+(use-package elpy
+  :ensure t
+  :bind ("C-c ." . elpy-goto-definition)
+  :config
+  (elpy-enable))
