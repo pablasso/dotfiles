@@ -15,7 +15,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (company robe evil-magit magit neotree ivy-rich counsel ivy helm projectile doom-theme doom-themes evil tc use-package))))
+    (hlinum company robe evil-magit magit neotree ivy-rich counsel ivy helm projectile doom-theme doom-themes evil tc use-package))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -44,6 +44,11 @@
   :config
   (doom-themes-neotree-config)
   (load-theme 'doom-one t))
+
+(use-package hlinum
+  :ensure t
+  :config
+  (hlinum-activate))
 
 (use-package evil
   :ensure t
