@@ -36,6 +36,8 @@
 (setq mac-command-modifier 'super)
 
 ;; packages
+
+; run after install: M-x all-the-icons-install-fonts
 (use-package all-the-icons
   :ensure t)
 
@@ -125,6 +127,7 @@
 (use-package evil-magit
   :ensure t)
 
+; initialize rbenv on ~/.profile
 (use-package robe
   :ensure t
   :bind ("C-c ," . robe-jump)
@@ -142,6 +145,7 @@
   :config
   :bind (("C-c d" . dash-at-point)))
 
+; initialize pyenv on ~/.profile
 (use-package elpy
   :ensure t
   :bind ("C-c ." . elpy-goto-definition)
