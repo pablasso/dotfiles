@@ -15,7 +15,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (elpy dash-at-point hlinum company robe evil-magit magit neotree ivy-rich counsel ivy helm projectile doom-theme doom-themes evil tc use-package))))
+    (treemacs-icons-dired treemacs-magit treemacs-projectile treemacs-evil treeview sidebar elpy dash-at-point hlinum company robe evil-magit magit ivy-rich counsel ivy helm projectile doom-theme doom-themes evil tc use-package))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -45,7 +45,7 @@
 (use-package doom-themes
   :ensure t
   :config
-  (doom-themes-neotree-config)
+  (doom-themes-treemacs-config)
   (load-theme 'doom-one t))
 
 (use-package hlinum
@@ -92,34 +92,33 @@
   (define-key projectile-mode-map (kbd "s-p") 'projectile-command-map)
   (projectile-mode +1))
 
-(use-package neotree
+(use-package treemacs
   :ensure t
-  :config
-  (setq-default neo-show-hidden-files t) ; show hidden files by default
-  (setq neo-window-fixed-size nil) ; resizable window
-  ; the following opens with focus on the file opened in the buffer
-  (defun neotree-project-dir-toggle ()
-  "Open NeoTree using the project root, using find-file-in-project,
-  or the current buffer directory."
-  (interactive)
-  (let ((project-dir
-	 (ignore-errors
-	 ;;; Pick one: projectile or find-file-in-project
-	 ; (projectile-project-root)
-	 (ffip-project-root)
-	 ))
-       (file-name (buffer-file-name))
-       (neo-smart-open t))
-    (if (and (fboundp 'neo-global--window-exists-p)
-	     (neo-global--window-exists-p))
-	(neotree-hide)
-      (progn
-	(neotree-show)
-	(if project-dir
-	    (neotree-dir project-dir))
-	(if file-name
-	    (neotree-find file-name))))))
-  (global-set-key (kbd "C-c m") 'neotree-project-dir-toggle))
+  :bind
+  (:map global-map
+        ("M-0"       . treemacs-select-window)
+        ("C-x t 1"   . treemacs-delete-other-windows)
+        ("C-x t t"   . treemacs)
+        ("C-x t B"   . treemacs-bookmark)
+        ("C-x t C-t" . treemacs-find-file)
+        ("C-x t M-t" . treemacs-find-tag)))
+
+(use-package treemacs-evil
+  :after treemacs evil
+  :ensure t)
+
+(use-package treemacs-projectile
+  :after treemacs projectile
+  :ensure t)
+
+(use-package treemacs-icons-dired
+  :after treemacs dired
+  :ensure t
+  :config (treemacs-icons-dired-mode))
+
+(use-package treemacs-magit
+  :after treemacs magit
+  :ensure t)
 
 (use-package magit
   :ensure t
