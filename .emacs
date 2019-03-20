@@ -79,7 +79,7 @@
   :ensure t
   :config
   (setq projectile-completion-system 'ivy)
-  (setq projectile-project-search-path '("~/dev/personal/" "~/dev/topfunnel/"))
+  (setq projectile-project-search-path '("~/dev/"))
   (define-key projectile-mode-map (kbd "s-p") 'projectile-command-map)
   (projectile-mode +1))
 
