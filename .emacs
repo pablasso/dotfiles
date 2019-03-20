@@ -15,7 +15,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (evil-magit magit neotree ivy-rich counsel ivy helm projectile doom-theme doom-themes evil tc use-package))))
+    (company robe evil-magit magit neotree ivy-rich counsel ivy helm projectile doom-theme doom-themes evil tc use-package))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -119,3 +119,15 @@
 
 (use-package evil-magit
   :ensure t)
+
+(use-package robe
+  :ensure t
+  :bind ("C-c ." . robe-jump)
+  :config
+  (add-hook 'ruby-mode-hook 'robe-mode))
+
+(use-package company
+  :ensure t 
+  :config
+  (push 'company-robe company-backends)
+  (add-hook 'after-init-hook 'global-company-mode))
