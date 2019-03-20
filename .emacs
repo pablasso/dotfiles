@@ -15,7 +15,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (helm projectile doom-theme doom-themes evil tc use-package))))
+    (magit neotree ivy-rich counsel ivy helm projectile doom-theme doom-themes evil tc use-package))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -36,9 +36,13 @@
 (setq mac-command-modifier 'super)
 
 ;; packages
+(use-package all-the-icons
+  :ensure t)
+
 (use-package doom-themes
   :ensure t
   :config
+  (doom-themes-neotree-config)
   (load-theme 'doom-one t))
 
 (use-package evil
@@ -46,18 +50,69 @@
   :config
   (evil-mode 1))
 
-(use-package helm
+(use-package ivy
   :ensure t
   :config
-  (global-set-key (kbd "M-x") #'helm-M-x)
-  (global-set-key (kbd "C-x r b") #'helm-filtered-bookmarks)
-  (global-set-key (kbd "C-x C-f") #'helm-find-files)
-  (helm-mode 1))
+  (global-set-key (kbd "M-x") 'counsel-M-x)
+  (global-set-key (kbd "C-c s") 'counsel-ag)
+  (ivy-mode 1))
+
+(use-package counsel
+  :ensure t
+  :after ivy
+  :config
+  (counsel-mode 1))
+
+(use-package ivy-rich
+  :ensure t
+  :after ivy
+  :config
+  (ivy-rich-mode 1))
+
+(use-package swiper
+  :ensure t
+  :after ivy
+  :bind
+  (("C-s" . swiper)))
 
 (use-package projectile
   :ensure t
   :config
+  (setq projectile-completion-system 'ivy)
+  (setq projectile-project-search-path '("~/dev/personal/" "~/dev/topfunnel/"))
   (define-key projectile-mode-map (kbd "s-p") 'projectile-command-map)
-  (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
-  (setq projectile-project-search-path '("~/dev/personal/" "~/dev/topfunnel/" "~/dev/wizeline/"))
   (projectile-mode +1))
+
+(use-package neotree
+  :ensure t
+  :config
+  (setq-default neo-show-hidden-files t) ; show hidden files by default
+  (setq neo-window-fixed-size nil) ; resizable window
+  ; the following opens with focus on the file opened in the buffer
+  (defun neotree-project-dir-toggle ()
+  "Open NeoTree using the project root, using find-file-in-project,
+  or the current buffer directory."
+  (interactive)
+  (let ((project-dir
+	 (ignore-errors
+	 ;;; Pick one: projectile or find-file-in-project
+	 ; (projectile-project-root)
+	 (ffip-project-root)
+	 ))
+       (file-name (buffer-file-name))
+       (neo-smart-open t))
+    (if (and (fboundp 'neo-global--window-exists-p)
+	     (neo-global--window-exists-p))
+	(neotree-hide)
+      (progn
+	(neotree-show)
+	(if project-dir
+	    (neotree-dir project-dir))
+	(if file-name
+	    (neotree-find file-name))))))
+  (global-set-key (kbd "C-c m") 'neotree-project-dir-toggle))
+
+(use-package magit
+  :ensure t
+  :config
+  (global-set-key (kbd "C-c g") 'magit-status))
