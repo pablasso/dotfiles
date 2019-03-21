@@ -98,6 +98,7 @@
   (:map global-map
 	("C-x t t" . treemacs))
   :config
+  ; TODO: remove this ugly fixed path, how can we load pyenv instead?
   (setq treemacs-python-executable (executable-find "/Users/pablasso/.pyenv/versions/3.7.2/bin/python"))
   (add-to-list 'treemacs-pre-file-insert-predicates #'treemacs-is-file-git-ignored?)
   (treemacs-git-mode 'extended))
@@ -127,13 +128,6 @@
 (use-package evil-magit
   :ensure t)
 
-; initialize rbenv on ~/.profile
-(use-package robe
-  :ensure t
-  :bind ("C-c ," . robe-jump)
-  :config
-  (add-hook 'ruby-mode-hook 'robe-mode))
-
 (use-package company
   :ensure t 
   :config
@@ -145,9 +139,18 @@
   :config
   :bind (("C-c d" . dash-at-point)))
 
-; initialize pyenv on ~/.profile
-(use-package elpy
-  :ensure t
-  :bind ("C-c ." . elpy-goto-definition)
+(use-package lsp-mode
+  :commands lsp
   :config
-  (elpy-enable))
+  (require 'lsp-clients)
+  (setq lsp-prefer-flymake :none)
+  (add-hook 'python-mode-hook 'lsp)
+  (lsp-register-client
+   ; TODO: this server is a bash script using pyls, figure out how to load pyenv beforehand instead
+   (make-lsp-client :new-connection (lsp-stdio-connection "pyserver") 
+                    :major-modes '(python-mode)
+                    :server-id 'pyls)))
+
+(use-package company-lsp
+  :config
+  (push 'company-lsp company-backends))
