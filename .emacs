@@ -131,7 +131,6 @@
 (use-package company
   :ensure t 
   :config
-  (push 'company-robe company-backends)
   (add-hook 'after-init-hook 'global-company-mode))
 
 (use-package dash-at-point
