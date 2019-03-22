@@ -139,6 +139,7 @@
   :bind (("C-c d" . dash-at-point)))
 
 (use-package lsp-mode
+  :ensure t
   :commands lsp
   :config
   (require 'lsp-clients)
@@ -157,5 +158,6 @@
                     :server-id 'ruby-ls)))
 
 (use-package company-lsp
+  :ensure t
   :config
   (push 'company-lsp company-backends))
