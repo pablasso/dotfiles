@@ -15,7 +15,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (treemacs-icons-dired treemacs-magit treemacs-projectile treemacs-evil treeview sidebar elpy dash-at-point hlinum company robe evil-magit magit ivy-rich counsel ivy helm projectile doom-theme doom-themes evil tc use-package))))
+    (zoom-window treemacs-icons-dired treemacs-magit treemacs-projectile treemacs-evil treeview sidebar elpy dash-at-point hlinum company robe evil-magit magit ivy-rich counsel ivy helm projectile doom-theme doom-themes evil tc use-package))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -161,3 +161,10 @@
   :ensure t
   :config
   (push 'company-lsp company-backends))
+
+(use-package zoom-window
+  :ensure t
+  :config
+  (global-set-key (kbd "C-x C-z") 'zoom-window-zoom)
+  (custom-set-variables
+   '(zoom-window-mode-line-color "DarkGreen"))
