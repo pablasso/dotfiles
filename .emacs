@@ -48,6 +48,10 @@
   (doom-themes-treemacs-config)
   (load-theme 'doom-one t))
 
+(use-package doom-modeline
+  :ensure t
+  :hook (after-init . doom-modeline-mode))
+
 (use-package hlinum
   :ensure t
   :config
