@@ -15,7 +15,8 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (zoom-window treemacs-icons-dired treemacs-magit treemacs-projectile treemacs-evil treeview sidebar elpy dash-at-point hlinum company robe evil-magit magit ivy-rich counsel ivy helm projectile doom-theme doom-themes evil tc use-package))))
+    (ag counsel-projectile zoom-window treemacs-icons-dired treemacs-magit treemacs-projectile treemacs-evil treeview sidebar elpy dash-at-point hlinum company robe evil-magit magit ivy-rich counsel ivy helm projectile doom-theme doom-themes evil tc use-package)))
+ '(zoom-window-mode-line-color "DarkGreen"))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -66,7 +67,6 @@
   :ensure t
   :config
   (global-set-key (kbd "M-x") 'counsel-M-x)
-  (global-set-key (kbd "C-c s") 'counsel-ag)
   (defalias #'forward-evil-word #'forward-evil-symbol) ; select full words like vim does with w
   (ivy-mode 1))
 
@@ -93,8 +93,17 @@
   :config
   (setq projectile-completion-system 'ivy)
   (setq projectile-project-search-path '("~/dev/"))
-  (define-key projectile-mode-map (kbd "s-p") 'projectile-command-map)
   (projectile-mode +1))
+
+(use-package counsel-projectile
+  :ensure t
+  :after counsel projectile
+  :config
+  (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
+  (counsel-projectile-mode 1))
+
+(use-package ag
+  :ensure t)
 
 (use-package treemacs
   :ensure t
