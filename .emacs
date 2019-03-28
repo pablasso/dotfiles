@@ -31,7 +31,6 @@
 (global-linum-mode t)
 (show-paren-mode)
 (set-default-font "Hack 13")
-(add-to-list 'default-frame-alist '(fullscreen . maximized))
 
 ;; generic
 (setq backup-directory-alist `(("." . "~/.saves")))
