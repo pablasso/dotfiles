@@ -15,7 +15,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (dashboard ag counsel-projectile zoom-window treemacs-icons-dired treemacs-magit treemacs-projectile treemacs-evil treeview sidebar elpy dash-at-point hlinum company robe evil-magit magit ivy-rich counsel ivy helm projectile doom-theme doom-themes evil tc use-package)))
+    (evil-leader dashboard ag counsel-projectile zoom-window treemacs-icons-dired treemacs-magit treemacs-projectile treemacs-evil treeview sidebar elpy dash-at-point hlinum company robe evil-magit magit ivy-rich counsel ivy helm projectile doom-theme doom-themes evil tc use-package)))
  '(zoom-window-mode-line-color "DarkGreen"))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -63,8 +63,30 @@
   :config
   (hlinum-activate))
 
+
+(use-package evil-leader
+  :ensure t
+  :config
+  (evil-leader/set-leader ",")
+  (evil-leader/set-key
+    "1" 'projectile-previous-project-buffer
+    "2" 'projectile-next-project-buffer
+    "a" 'counsel-projectile-ag
+    "b" 'counsel-projectile-switch-to-buffer
+    "d" 'dash-at-point
+    "g" 'magit
+    "j" 'lsp-find-definition
+    "p" 'counsel-projectile-switch-project
+    "r" 'treemacs
+    "s" 'swiper
+    "t" 'counsel-projectile-find-file
+    "w" 'kill-current-buffer
+    "z" 'zoom-window-zoom)
+  (global-evil-leader-mode))
+
 (use-package evil
   :ensure t
+  :after evil-leader
   :config
   (evil-mode 1))
 
@@ -89,9 +111,7 @@
 
 (use-package swiper
   :ensure t
-  :after ivy
-  :bind
-  (("C-s" . swiper)))
+  :after ivy)
 
 (use-package projectile
   :ensure t
@@ -112,9 +132,6 @@
 
 (use-package treemacs
   :ensure t
-  :bind
-  (:map global-map
-	("C-x t t" . treemacs))
   :config
   ; TODO: remove this ugly fixed path, how can we load pyenv instead?
   (setq treemacs-python-executable (executable-find "/Users/pablasso/.pyenv/versions/3.7.2/bin/python"))
@@ -139,9 +156,7 @@
   :ensure t)
 
 (use-package magit
-  :ensure t
-  :config
-  (global-set-key (kbd "C-c g") 'magit-status))
+  :ensure t)
 
 (use-package evil-magit
   :ensure t)
@@ -152,9 +167,7 @@
   (add-hook 'after-init-hook 'global-company-mode))
 
 (use-package dash-at-point
-  :ensure t
-  :config
-  :bind (("C-c d" . dash-at-point)))
+  :ensure t)
 
 (use-package lsp-mode
   :ensure t
@@ -183,6 +196,5 @@
 (use-package zoom-window
   :ensure t
   :config
-  (global-set-key (kbd "C-x C-z") 'zoom-window-zoom)
   (custom-set-variables
    '(zoom-window-mode-line-color "DarkGreen")))
