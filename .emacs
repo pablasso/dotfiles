@@ -74,12 +74,12 @@
     "a" 'counsel-projectile-ag
     "b" 'counsel-projectile-switch-to-buffer
     "d" 'dash-at-point
+    "f" 'counsel-projectile-find-file
     "g" 'magit
     "j" 'lsp-find-definition
     "p" 'counsel-projectile-switch-project
-    "r" 'treemacs
     "s" 'swiper
-    "t" 'counsel-projectile-find-file
+    "t" 'treemacs
     "w" 'kill-current-buffer
     "z" 'zoom-window-zoom)
   (global-evil-leader-mode))
