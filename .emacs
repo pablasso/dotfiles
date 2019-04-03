@@ -30,7 +30,7 @@
 (scroll-bar-mode -1)
 (global-linum-mode t)
 (show-paren-mode)
-(set-default-font "Hack 13")
+(set-default-font "Hack 14")
 
 ;; generic
 (setq backup-directory-alist `(("." . "~/.saves")))
