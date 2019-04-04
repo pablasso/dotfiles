@@ -69,6 +69,8 @@
   :config
   (evil-leader/set-leader ",")
   (evil-leader/set-key
+    "[" 'diff-hl-previous-hunk
+    "]" 'diff-hl-next-hunk
     "1" 'projectile-previous-project-buffer
     "2" 'projectile-next-project-buffer
     "3" 'bm-previous
