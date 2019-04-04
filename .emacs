@@ -31,6 +31,7 @@
 (show-paren-mode)
 (set-default-font "Hack 14")
 (add-hook 'prog-mode-hook 'display-line-numbers-mode)
+(toggle-frame-fullscreen)
 
 ;; generic
 (setq backup-directory-alist `(("." . "~/.saves")))
