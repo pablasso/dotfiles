@@ -28,9 +28,9 @@
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
-(global-linum-mode t)
 (show-paren-mode)
 (set-default-font "Hack 14")
+(add-hook 'prog-mode-hook 'display-line-numbers-mode)
 
 ;; generic
 (setq backup-directory-alist `(("." . "~/.saves")))
