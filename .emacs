@@ -15,7 +15,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (evil-leader dashboard ag counsel-projectile zoom-window treemacs-icons-dired treemacs-magit treemacs-projectile treemacs-evil treeview sidebar elpy dash-at-point hlinum company robe evil-magit magit ivy-rich counsel ivy helm projectile doom-theme doom-themes evil tc use-package)))
+    (bm evil-leader dashboard ag counsel-projectile zoom-window treemacs-icons-dired treemacs-magit treemacs-projectile treemacs-evil treeview sidebar elpy dash-at-point hlinum company robe evil-magit magit ivy-rich counsel ivy helm projectile doom-theme doom-themes evil tc use-package)))
  '(zoom-window-mode-line-color "DarkGreen"))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -71,12 +71,15 @@
   (evil-leader/set-key
     "1" 'projectile-previous-project-buffer
     "2" 'projectile-next-project-buffer
+    "3" 'bm-previous
+    "4" 'bm-next
     "a" 'counsel-projectile-ag
     "b" 'counsel-projectile-switch-to-buffer
     "d" 'dash-at-point
     "f" 'counsel-projectile-find-file
     "g" 'magit
     "j" 'lsp-find-definition
+    "m" 'bm-toggle
     "p" 'counsel-projectile-switch-project
     "s" 'swiper
     "t" 'treemacs
@@ -198,3 +201,8 @@
   :config
   (custom-set-variables
    '(zoom-window-mode-line-color "DarkGreen")))
+
+(use-package bm
+  :ensure t
+  :config
+  (setq bm-cycle-all-buffers t))
