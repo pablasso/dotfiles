@@ -86,6 +86,7 @@
     "p" 'counsel-projectile-switch-project
     "s" 'swiper
     "t" 'treemacs
+    "u" 'diff-hl-revert-hunk
     "w" 'kill-current-buffer
     "z" 'zoom-window-zoom)
   (global-evil-leader-mode))
