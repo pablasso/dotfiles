@@ -7253,10 +7253,14 @@
 		<key>TB Is Shown</key>
 		<integer>1</integer>
 	</dict>
+	<key>NSWindow Frame NSFontPanel</key>
+	<string>3329 110 445 103 0 0 3840 1577 </string>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>1610 888 620 392 0 0 3840 1577 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>942 391 1018 447 0 0 3840 1577 </string>
+	<string>1085 328 796 486 0 0 3840 1577 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1680 1027 0 0 1680 1027 </string>
+	<string>0 0 1152 1577 0 0 3840 1577 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>212 76 570 400 0 0 1680 1027 </string>
 	<key>NeverWarnAboutShortLivedSessions_5330EE18-6C17-4B4C-90D5-FCA6AA0383A5</key>
@@ -7967,7 +7971,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>Hack 12</string>
+			<string>Hack-Regular 13</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
@@ -8959,14 +8963,17 @@
 	<key>NoSyncInstallationId</key>
 	<string>FA75B7B1-27DB-4E7E-8C56-4956843FACD2</string>
 	<key>NoSyncLastTipTime</key>
-	<real>574792437.741153</real>
+	<real>574882450.80582094</real>
 	<key>NoSyncPermissionToShowTip</key>
 	<true/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>574026727.66697598</real>
+	<key>NoSyncTipsDisabled</key>
+	<true/>
 	<key>NoSyncTipsToNotShow</key>
 	<array>
 		<string>000</string>
+		<string>0000</string>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
@@ -9038,7 +9045,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-03-20T16:33:57Z</date>
+	<date>2019-04-15T19:11:22Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -9096,6 +9103,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.2.7</string>
+	<string>3.2.8</string>
 </dict>
 </plist>
