@@ -15,7 +15,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (olivetti diff-hl diff-hl-mode bm evil-leader dashboard ag counsel-projectile zoom-window treemacs-icons-dired treemacs-magit treemacs-projectile treemacs-evil treeview sidebar elpy dash-at-point hlinum company robe evil-magit magit ivy-rich counsel ivy helm projectile doom-theme doom-themes evil tc use-package)))
+    (editorconfig olivetti diff-hl diff-hl-mode bm evil-leader dashboard ag counsel-projectile zoom-window treemacs-icons-dired treemacs-magit treemacs-projectile treemacs-evil treeview sidebar elpy dash-at-point hlinum company robe evil-magit magit ivy-rich counsel ivy helm projectile doom-theme doom-themes evil tc use-package)))
  '(zoom-window-mode-line-color "DarkGreen"))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -218,3 +218,8 @@
 
 (use-package olivetti
   :ensure t)
+
+(use-package editorconfig
+  :ensure t
+  :config
+  (editorconfig-mode 1))
