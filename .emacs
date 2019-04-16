@@ -13,9 +13,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages
-   (quote
-    (editorconfig olivetti diff-hl diff-hl-mode bm evil-leader dashboard ag counsel-projectile zoom-window treemacs-icons-dired treemacs-magit treemacs-projectile treemacs-evil treeview sidebar elpy dash-at-point hlinum company robe evil-magit magit ivy-rich counsel ivy helm projectile doom-theme doom-themes evil tc use-package)))
+  '(package-selected-packages
+     (quote
+       (web-mode editorconfig olivetti diff-hl diff-hl-mode bm evil-leader dashboard ag counsel-projectile zoom-window treemacs-icons-dired treemacs-magit treemacs-projectile treemacs-evil treeview sidebar elpy dash-at-point hlinum company robe evil-magit magit ivy-rich counsel ivy helm projectile doom-theme doom-themes evil tc use-package)))
  '(zoom-window-mode-line-color "DarkGreen"))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -223,3 +223,9 @@
   :ensure t
   :config
   (editorconfig-mode 1))
+
+(use-package web-mode
+  :ensure t
+  :config
+  (add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
+  (setq web-mode-enable-current-column-highlight t))
