@@ -214,6 +214,7 @@
 (use-package diff-hl
   :ensure t
   :config
+  (diff-hl-margin-mode)
   (global-diff-hl-mode))
 
 (use-package olivetti
