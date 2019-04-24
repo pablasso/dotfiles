@@ -76,7 +76,7 @@
     "2" 'projectile-next-project-buffer
     "3" 'bm-previous
     "4" 'bm-next
-    "a" 'counsel-projectile-ag
+    "a" 'counsel-projectile-git-grep
     "b" 'counsel-projectile-switch-to-buffer
     "d" 'dash-at-point
     "f" 'counsel-projectile-find-file
