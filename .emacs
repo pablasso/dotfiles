@@ -15,7 +15,7 @@
  ;; If there is more than one, they won't work right.
   '(package-selected-packages
      (quote
-       (web-mode editorconfig olivetti diff-hl diff-hl-mode bm evil-leader dashboard ag counsel-projectile zoom-window treemacs-icons-dired treemacs-magit treemacs-projectile treemacs-evil treeview sidebar elpy dash-at-point hlinum company robe evil-magit magit ivy-rich counsel ivy helm projectile doom-theme doom-themes evil tc use-package)))
+       (exec-path-from-shell web-mode editorconfig olivetti diff-hl diff-hl-mode bm evil-leader dashboard ag counsel-projectile zoom-window treemacs-icons-dired treemacs-magit treemacs-projectile treemacs-evil treeview sidebar elpy dash-at-point hlinum company robe evil-magit magit ivy-rich counsel ivy helm projectile doom-theme doom-themes evil tc use-package)))
  '(zoom-window-mode-line-color "DarkGreen"))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -39,6 +39,14 @@
 (setq mac-command-modifier 'super)
 
 ;; packages
+
+; load the same PATH as our user in Mac OS or Linux
+; necessary since we're starting from a GUI not the terminal
+(use-package exec-path-from-shell
+  :ensure t
+  :config
+  (when (memq window-system '(mac ns x))
+  (exec-path-from-shell-initialize)))
 
 ; run after install: M-x all-the-icons-install-fonts
 (use-package all-the-icons
