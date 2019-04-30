@@ -91,9 +91,10 @@
     "d" 'dash-at-point
     "f" 'counsel-projectile-find-file
     "g" 'magit
-    "j" 'lsp-find-definition
+    "j" 'lsp-ui-peek-find-definitions
     "m" 'bm-toggle
     "p" 'counsel-projectile-switch-project
+    "r" 'lsp-ui-peek-find-references
     "s" 'swiper
     "t" 'treemacs
     "u" 'diff-hl-revert-hunk
