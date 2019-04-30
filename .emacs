@@ -39,6 +39,17 @@
 (setq mac-option-modifier 'meta)
 (setq mac-command-modifier 'super)
 
+;; custom functions
+(defun ivy-with-thing-at-point (cmd)
+  (let ((ivy-initial-inputs-alist
+         (list
+          (cons cmd (thing-at-point 'symbol)))))
+    (funcall cmd)))
+
+(defun swiper-thing-at-point ()
+  (interactive)
+  (ivy-with-thing-at-point 'swiper))
+
 ;; packages
 
 ; load the same PATH as our user in Mac OS or Linux
@@ -100,7 +111,7 @@
     "m" 'bm-toggle
     "p" 'counsel-projectile-switch-project
     "r" 'lsp-ui-peek-find-references
-    "s" 'swiper
+    "s" 'swiper-thing-at-point
     "t" 'treemacs
     "u" 'diff-hl-revert-hunk
     "w" 'kill-current-buffer
