@@ -224,7 +224,9 @@
                     :server-id 'ruby-ls)))
 
 (use-package lsp-ui
-  :ensure t)
+  :ensure t
+  :config
+  (setq lsp-ui-sideline-enable nil))
 
 (use-package company-lsp
   :ensure t
