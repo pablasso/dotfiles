@@ -225,7 +225,11 @@
 
 (use-package lsp-ui
   :ensure t
+  :after lsp-mode
   :config
+  (setq lsp-ui-peek-enable t)
+  (setq lsp-ui-doc-enable t)
+  (setq lsp-ui-flycheck-enable nil)
   (setq lsp-ui-sideline-enable nil))
 
 (use-package company-lsp
