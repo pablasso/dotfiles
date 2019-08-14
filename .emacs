@@ -151,7 +151,7 @@
   :ensure t
   :config
   (setq projectile-completion-system 'ivy)
-  (setq projectile-project-search-path '("~/dev/personal" "~/dev/topfunnel"))
+  (setq projectile-project-search-path '("~/dev/personal"))
   (projectile-mode +1))
 
 (use-package counsel-projectile
