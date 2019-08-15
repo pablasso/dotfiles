@@ -129,8 +129,5 @@ export PATH=/usr/local/bin:$PATH
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
-# rbenv
-eval "$(rbenv init -)"
-
 # always load zplug at the end
 zplug load
