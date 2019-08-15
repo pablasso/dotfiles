@@ -210,17 +210,11 @@
   (require 'lsp-clients)
   (setq lsp-prefer-flymake :none)
   (add-hook 'python-mode-hook 'lsp)
-  (add-hook 'ruby-mode-hook 'lsp)
   (lsp-register-client
    ; TODO: this server is a bash script using pyls, figure out how to load pyenv beforehand instead
    (make-lsp-client :new-connection (lsp-stdio-connection "pyserver")
                     :major-modes '(python-mode)
-                    :server-id 'pyls))
-  (lsp-register-client
-   ; TODO: this server is a bash script using solargraph, figure out how to load rbenv beforehand instead
-   (make-lsp-client :new-connection (lsp-stdio-connection "rubyserver")
-                    :major-modes '(ruby-mode)
-                    :server-id 'ruby-ls)))
+                    :server-id 'pyls)))
 
 (use-package lsp-ui
   :ensure t
