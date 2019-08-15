@@ -1,8 +1,6 @@
-;; Added by Package.el.  This must come before configurations of
-;; installed packages.  Don't delete this line.  If you don't want it,
-;; just comment it out by adding a semicolon to the start of the line.
-;; You may delete these explanatory comments.
-(setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3") ;; emacs bug while retrieving from GNU ELPA
+;; emacs bug while retrieving from GNU ELPA 
+;; https://github.com/bbatsov/prelude/issues/1225#issuecomment-511266025
+(setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3") 
 
 (require 'package)
 (add-to-list 'package-archives
