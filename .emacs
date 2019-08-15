@@ -168,7 +168,7 @@
   :ensure t
   :config
   ; TODO: remove this ugly fixed path, how can we load pyenv instead?
-  (setq treemacs-python-executable (executable-find "/Users/pablasso/.pyenv/versions/3.7.2/bin/python"))
+  (setq treemacs-python-executable (executable-find "/Users/pablasso/.pyenv/versions/3.7.4/bin/python"))
   (add-to-list 'treemacs-pre-file-insert-predicates #'treemacs-is-file-git-ignored?)
   (treemacs-git-mode 'extended))
 
