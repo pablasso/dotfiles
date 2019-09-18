@@ -1,0 +1,9 @@
+{
+    "python.jediEnabled": false,
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "editor.fontSize": 14,
+    "editor.fontFamily": "Hack, Menlo, Monaco, 'Courier New', monospace"
+}
