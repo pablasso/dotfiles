@@ -43,6 +43,9 @@ build.log
 temp-*
 dump.rdb
 
-#tmux
+# tmux
 tmux-client-*
 tmux-server-*
+
+# editors
+.vscode
