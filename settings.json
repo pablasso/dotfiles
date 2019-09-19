@@ -8,5 +8,9 @@
     "editor.fontFamily": "Hack, Menlo, Monaco, 'Courier New', monospace",
     "gitlens.codeLens.enabled": false,
     "gitlens.currentLine.enabled": false,
-    "git.confirmSync": false
+    "git.confirmSync": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.formatting.provider": "black",
+    "editor.formatOnSave": true
 }
