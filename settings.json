@@ -5,5 +5,7 @@
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "editor.fontSize": 14,
-    "editor.fontFamily": "Hack, Menlo, Monaco, 'Courier New', monospace"
+    "editor.fontFamily": "Hack, Menlo, Monaco, 'Courier New', monospace",
+    "gitlens.codeLens.enabled": false,
+    "gitlens.currentLine.enabled": false
 }
