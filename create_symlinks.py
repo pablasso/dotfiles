@@ -4,16 +4,18 @@ import os
 
 # this could be read from the directory but I'd rather be specific.
 DOTFILES = [
-    '.config/nvim/init.vim',
-    '.tmux.conf',
-    '.gitconfig',
-    '.gitignore_global',
-    '.ssh/config',
-    '.tmuxinator'
+    ".config/nvim/init.vim",
+    ".tmux.conf",
+    ".gitconfig",
+    ".gitignore_global",
+    ".ssh/config",
+    ".tmuxinator",
+    ".editorconfig",
 ]
 
-SOURCE = '/Users/pablasso/dev/personal/dotfiles'
-DESTINATION = '/Users/pablasso'
+SOURCE = "/Users/pablasso/dev/personal/dotfiles"
+DESTINATION = "/Users/pablasso"
+
 
 def run():
     for dotfile in DOTFILES:
@@ -31,7 +33,7 @@ def _move_path_if_applicable(path):
     backup_counter = 1
 
     while not backup_path:
-        candidate_path = '{0}.{1}'.format(path, backup_counter)
+        candidate_path = "{0}.{1}".format(path, backup_counter)
 
         if os.path.exists(candidate_path):
             backup_counter += 1
@@ -40,18 +42,19 @@ def _move_path_if_applicable(path):
         backup_path = candidate_path
 
     _move_path(path, backup_path)
-    
+
+
 def _move_path(path, new_path):
-    print('.. moving existing path to {0} ..'.format(new_path)),
+    print(".. moving existing path to {0} ..".format(new_path)),
     os.rename(path, new_path)
-    print(' Done.')
+    print(" Done.")
 
 
 def _create_symlink(source, destination):
-    print('creating symlink at {0} ..'.format(destination)),
+    print("creating symlink at {0} ..".format(destination)),
     os.symlink(source, destination)
-    print(' Done.')
+    print(" Done.")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     run()
