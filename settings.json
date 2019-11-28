@@ -4,13 +4,12 @@
     "breadcrumbs.enabled": true,
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "editor.fontSize": 14,
-    "editor.fontFamily": "Hack, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontSize": 15,
+    "editor.fontFamily": "Dank Mono,Hack, Menlo, Monaco, 'Courier New', monospace",
     "git.confirmSync": false,
     "python.linting.flake8Enabled": true,
     "python.linting.pylintEnabled": false,
     "python.formatting.provider": "black",
-    "editor.formatOnSave": true,
     "window.zoomLevel": 0,
     "gitlens.hovers.currentLine.over": "line",
     "gitlens.currentLine.enabled": false,
@@ -21,5 +20,8 @@
     "python.linting.flake8Args": [
         "--max-line-length=120"
     ],
-    "diffEditor.renderSideBySide": false
+    "diffEditor.renderSideBySide": false,
+    "editor.fontLigatures": true,
+    "editor.formatOnSave": true,
+    "prettier.requireConfig": true
 }
