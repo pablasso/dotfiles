@@ -1,4 +1,5 @@
 # I'm using zplug now. Set it up first with homebrew and then source this file in ~/.zshrc
+export ZPLUG_HOME=/usr/local/opt/zplug
 source $ZPLUG_HOME/init.zsh
 
 # theme
