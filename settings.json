@@ -24,5 +24,6 @@
     "editor.fontLigatures": true,
     "editor.formatOnSave": true,
     "prettier.requireConfig": true,
-    "git.autofetch": true
+    "git.autofetch": true,
+    "workbench.colorTheme": "One Dark Pro"
 }
