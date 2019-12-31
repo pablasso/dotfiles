@@ -25,5 +25,6 @@
     "editor.formatOnSave": true,
     "prettier.requireConfig": true,
     "git.autofetch": true,
-    "workbench.colorTheme": "One Dark Pro"
+    "workbench.colorTheme": "One Dark Pro",
+    "diffEditor.ignoreTrimWhitespace": false
 }
