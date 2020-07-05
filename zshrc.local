@@ -66,12 +66,6 @@ alias v='nvim'
 # go into a dir without typing cd
 setopt AUTO_CD
 
-# sublime text
-alias sub='open -a "Sublime Text"'
-
-# atom
-alias atom='open -a "Atom"'
-
 # tmuxinator
 alias mux='tmuxinator'
 
