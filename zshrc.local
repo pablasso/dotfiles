@@ -57,6 +57,9 @@ alias itree='tree --prune -I $(cat .gitignore | egrep -v "^#.*$|^[[:space:]]*$" 
 # misc
 alias netlisten="sudo lsof -PiTCP -sTCP:LISTEN"
 
+# find alternative
+alias fd=fdfind
+
 # tmux
 alias tmux="TERM=screen-256color-bce tmux"
 
