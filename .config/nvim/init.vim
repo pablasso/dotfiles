@@ -44,8 +44,6 @@ map ,2 :bn<ENTER>
 map ,w :bp<bar>sp<bar>bn<bar>bd<CR>
 " return to last buffer
 nmap <tab> :b#<cr>
-" fuzzy search
-nmap <C-P> :FZF<cr>
 " commenting
 map <leader>/ <plug>NERDCommenterToggle<cr>
 " turn off highlighting temporarily
@@ -55,8 +53,8 @@ map ,d :Dash<cr>
 " File explorer
 nmap ,n :NERDTreeFind<cr>
 nmap ,m :NERDTreeToggle<cr>
-" python formatter
-nmap ,f :Black<cr>
+" fuzzy file search
+nmap ,f :FZF<cr>
 " search
 nmap ,s :CtrlSF
 " splits movement
