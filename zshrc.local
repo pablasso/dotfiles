@@ -1,5 +1,14 @@
-# I'm using zplug now. Set it up first with homebrew and then source this file in ~/.zshrc
-export ZPLUG_HOME=/usr/local/opt/zplug
+# I'm using zplug. Install it first and then source this file in ~/.zshrc
+if [[ "$OSTYPE" == "linux-gnu" ]]; then
+    # install manually cloning repo at /home/pablasso/.zplug
+    export ZPLUG_HOME=/home/pablasso/.zplug
+elif [[ "$OSTYPE" == "darwin" ]]; then
+    # install via homebrew
+    export ZPLUG_HOME=/usr/local/opt/zplug
+else
+    echo "OS not recognized while setting up zplug"
+fi
+
 source $ZPLUG_HOME/init.zsh
 
 # theme
