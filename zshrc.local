@@ -8,8 +8,8 @@ zplug sindresorhus/pure, use:pure.zsh, from:github, as:theme
 
 # TODO: research why the installation/activation of pure is no longer working with zplug on Catalina.
 # for this to work I installed pure via nodejs and I'm loading it manually
-autoload -U promptinit; promptinit
-prompt pure
+# autoload -U promptinit; promptinit
+# prompt pure
 
 # set locale
 export LC_ALL=en_US.UTF-8
