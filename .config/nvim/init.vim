@@ -57,8 +57,8 @@ nmap ,n :NERDTreeFind<cr>
 nmap ,m :NERDTreeToggle<cr>
 " python formatter
 nmap ,f :Black<cr>
-" search with ack.vim
-nmap ,s :Ack 
+" search
+nmap ,s :CtrlSF
 " splits movement
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
@@ -100,7 +100,7 @@ Plug 'sbdchd/neoformat'
 Plug 'reasonml-editor/vim-reason'
 Plug 'ambv/black'
 Plug 'tpope/vim-vinegar'
-Plug 'mileszs/ack.vim'
+Plug 'dyng/ctrlsf.vim'
 
 call plug#end()
 
@@ -116,10 +116,6 @@ let NERDTreeShowHidden=1
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#enable_ignore_case = 1
 let g:SuperTabDefaultCompletionType = "<c-n>"
-
-" acv.vim
-let g:ackprg = 'pt -i --nogroup --nocolor --column'
-let g:ackhighlight = 1
 
 " lightline
 let g:lightline = {
