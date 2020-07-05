@@ -123,6 +123,11 @@ export EVENT_NOKQUEUE=1
 export PATH=/usr/local/bin:$PATH
 
 # pyenv
+# linux doesn't install it with all the other local binaries
+if [[ "$OSTYPE" == "linux-gnu" ]]; then
+    export PATH="$HOME/.pyenv/bin:$PATH"
+fi
+
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
