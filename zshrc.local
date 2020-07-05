@@ -92,6 +92,9 @@ export WORKON_HOME=$HOME/.virtualenvs
 export GOPATH=$HOME/gocode
 export PATH=$PATH:$GOPATH/bin
 
+# rust
+export PATH=$PATH:$HOME/.cargo/bin
+
 # docker
 alias kill_containers='docker kill $(docker ps -q)'
 alias stop_containers='docker stop $(docker ps -q)'
