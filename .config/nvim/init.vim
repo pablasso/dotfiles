@@ -99,6 +99,10 @@ Plug 'reasonml-editor/vim-reason'
 Plug 'ambv/black'
 Plug 'tpope/vim-vinegar'
 Plug 'dyng/ctrlsf.vim'
+Plug 'autozimu/LanguageClient-neovim', {
+  \ 'branch': 'next',
+  \ 'do': 'bash install.sh',
+  \ }
 
 call plug#end()
 
@@ -109,6 +113,21 @@ colorscheme snazzy
 let loaded_netrwPlugin=1
 let NERDTreeRespectWildIgnore=1
 let NERDTreeShowHidden=1
+
+" lsp
+" Required for operations modifying multiple buffers like rename.
+set hidden
+let g:LanguageClient_serverCommands = {
+  \ 'rust': ['~/.cargo/bin/rustup', 'run', 'stable', 'rls'],
+  \ }
+
+let g:LanguageClient_hideVirtualTextsOnInsert = 1
+
+nmap <F5> <Plug>(lcn-menu)
+nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
+nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
+nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
+nnoremap <silent> <F8> :call LanguageClient#textDocument_formatting()<CR>
 
 " autocompletion
 let g:deoplete#enable_at_startup = 1
