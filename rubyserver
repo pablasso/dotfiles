@@ -1,2 +1,0 @@
-#!/bin/bash
-/Users/pablasso/.rbenv/versions/2.5.1/bin/ruby /Users/pablasso/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/solargraph-0.31.3/bin/solargraph stdio
