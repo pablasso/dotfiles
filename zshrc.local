@@ -182,5 +182,11 @@ export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
+# workaround to enable passphrase for gpg in wsl
+export GPG_TTY=$(tty)
+
+# make sure ssh-agent is running all the time to remember passphrasses - wsl workaround
+eval $(ssh-agent)
+
 # always load zplug at the end
 zplug load
