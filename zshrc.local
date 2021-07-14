@@ -42,7 +42,7 @@ esac
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
     # install manually cloning repo at /home/pablasso/.zplug
     export ZPLUG_HOME=/home/pablasso/.zplug
-elif [[ "$OSTYPE" == "darwin" ]]; then
+elif [[ "$OSTYPE" == darwin* ]]; then
     # install via homebrew
     export ZPLUG_HOME=/usr/local/opt/zplug
 else
