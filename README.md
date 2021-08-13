@@ -4,10 +4,6 @@ I try to maintain here only what I'm currently using. Everything else gets delet
 
 ## Setup
 
-Run the following to symlink the dotfiles. 
+Clone this repo to `~/.dotfiles` and use GNU stow to symlink what you need. For example:
 
-```
-./create_symlinks.py
-```
-
-It will create a backup if the file already exists.
+`stow editors`
