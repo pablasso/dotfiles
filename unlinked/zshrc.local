@@ -39,6 +39,7 @@ case "${TERM}" in
 esac
 
 # I'm using zplug. Install it first and then source this file in ~/.zshrc
+# source ~/.dotfiles/unlinked/zshrc.local
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
     # install manually cloning repo at /home/pablasso/.zplug
     export ZPLUG_HOME=/home/pablasso/.zplug
