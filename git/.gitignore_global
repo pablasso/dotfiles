@@ -23,7 +23,6 @@ DerivedData
 *.gem
 *.rbc
 .bundle
-.config
 coverage
 InstalledFiles
 lib/bundler/man
