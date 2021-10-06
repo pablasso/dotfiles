@@ -161,6 +161,12 @@ export FZF_DEFAULT_COMMAND='fdfind --type f --hidden --follow --exclude .git'
 # to apply the command to CTRL-T as well
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
+# append this line to ~/.zshrc to enable fzf keybindings for Zsh:
+source /usr/share/doc/fzf/examples/key-bindings.zsh
+
+# append this line to ~/.zshrc to enable fuzzy auto-completion for Zsh:
+source /usr/share/doc/fzf/examples/completion.zsh
+
 # workaround around libevent issue with tmux on Sierra: https://github.com/tmux/tmux/issues/475
 export EVENT_NOKQUEUE=1
 
