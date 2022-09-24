@@ -45,7 +45,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     export ZPLUG_HOME=/home/pablasso/.zplug
 elif [[ "$OSTYPE" == darwin* ]]; then
     # install via homebrew
-    export ZPLUG_HOME=/usr/local/opt/zplug
+    export ZPLUG_HOME=$(brew --prefix)/opt/zplug
 else
     echo "OS not recognized while setting up zplug"
 fi
