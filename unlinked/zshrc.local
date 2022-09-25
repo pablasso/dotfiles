@@ -40,6 +40,7 @@ esac
 
 # I'm using zplug. Install it first and then source this file in ~/.zshrc
 # source ~/.dotfiles/unlinked/zshrc.local
+# you may need to install the `pure` theme with homebrew too, try it first without it.
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
     # install manually cloning repo at /home/pablasso/.zplug
     export ZPLUG_HOME=/home/pablasso/.zplug
@@ -56,10 +57,10 @@ source $ZPLUG_HOME/init.zsh
 zplug mafredri/zsh-async, from:github
 zplug sindresorhus/pure, use:pure.zsh, from:github, as:theme
 
-# TODO: research why the installation/activation of pure is no longer working with zplug on Catalina.
-# for this to work I installed pure via nodejs and I'm loading it manually
-# autoload -U promptinit; promptinit
-# prompt pure
+fpath+=("$(brew --prefix)/share/zsh/site-functions")
+
+autoload -U promptinit; promptinit
+prompt pure
 
 # set locale
 export LC_ALL=en_US.UTF-8
