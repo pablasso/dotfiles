@@ -165,6 +165,9 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 # workaround around libevent issue with tmux on Sierra: https://github.com/tmux/tmux/issues/475
 export EVENT_NOKQUEUE=1
 
+# pipx path (required by pipenv)
+export PATH="$HOME/.local/bin:$PATH"
+
 # make sure local libraries are always ahead
 export PATH=/usr/local/bin:$PATH
 
