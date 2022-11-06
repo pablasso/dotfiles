@@ -156,6 +156,10 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 # fzf
 source ~/.fzf.zsh
 
+# asdf
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
+
 # fd as the default file searcher
 export FZF_DEFAULT_COMMAND='fdfind --type f --hidden --follow --exclude .git'
 
