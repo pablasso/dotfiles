@@ -156,10 +156,14 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 # fzf
 source ~/.fzf.zsh
 
-# asdf on linux, brew on mac does it on its own
+# asdf
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
   . $HOME/.asdf/asdf.sh
   . $HOME/.asdf/completions/asdf.bash
+elif [[ "$OSTYPE" == darwin* ]]; then
+  . /opt/homebrew/opt/asdf/libexec/asdf.sh
+else
+  echo "OS not recognized while setting up asdf"
 fi
 
 # fd as the default file searcher
