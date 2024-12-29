@@ -1,82 +1,7 @@
-# text navigation
-case "${TERM}" in
-  cons25*|linux) # plain BSD/Linux console
-    bindkey '\e[H'    beginning-of-line   # home
-    bindkey '\e[F'    end-of-line         # end
-    bindkey '\e[5~'   delete-char         # delete
-    bindkey '[D'      emacs-backward-word # esc left
-    bindkey '[C'      emacs-forward-word  # esc right
-    ;;
-  *rxvt*) # rxvt derivatives
-    bindkey '\e[3~'   delete-char         # delete
-    bindkey '\eOc'    forward-word        # ctrl right
-    bindkey '\eOd'    backward-word       # ctrl left
-    # workaround for screen + urxvt
-    bindkey '\e[7~'   beginning-of-line   # home
-    bindkey '\e[8~'   end-of-line         # end
-    bindkey '^[[1~'   beginning-of-line   # home
-    bindkey '^[[4~'   end-of-line         # end
-    ;;
-  *xterm*) # xterm derivatives
-    bindkey '\e[H'    beginning-of-line   # home
-    bindkey '\e[F'    end-of-line         # end
-    bindkey '\e[3~'   delete-char         # delete
-    bindkey '\e[1;5C' forward-word        # ctrl right
-    bindkey '\e[1;5D' backward-word       # ctrl left
-    # workaround for screen + xterm
-    bindkey '\e[1~'   beginning-of-line   # home
-    bindkey '\e[4~'   end-of-line         # end
-    ;;
-  screen)
-    bindkey '^[[1~'   beginning-of-line   # home
-    bindkey '^[[4~'   end-of-line         # end
-    bindkey '\e[3~'   delete-char         # delete
-    bindkey '\eOc'    forward-word        # ctrl right
-    bindkey '\eOd'    backward-word       # ctrl left
-    bindkey '^[[1;5C' forward-word        # ctrl right
-    bindkey '^[[1;5D' backward-word       # ctrl left
-    ;;
-esac
+# source this file in ~/.zshrc
 
-# I'm using zplug. Install it first and then source this file in ~/.zshrc
-# source ~/.dotfiles/unlinked/zshrc.local
-# you may need to install the `pure` theme with homebrew too, try it first without it.
-if [[ "$OSTYPE" == "linux-gnu" ]]; then
-    # install manually cloning repo at /home/pablasso/.zplug
-    export ZPLUG_HOME=/home/pablasso/.zplug
-elif [[ "$OSTYPE" == darwin* ]]; then
-    # install via homebrew
-    export ZPLUG_HOME=$(brew --prefix)/opt/zplug
-else
-    echo "OS not recognized while setting up zplug"
-fi
-
-source $ZPLUG_HOME/init.zsh
-
-# theme
-zplug mafredri/zsh-async, from:github
-zplug sindresorhus/pure, use:pure.zsh, from:github, as:theme
-
+# zsh completions
 fpath+=("$(brew --prefix)/share/zsh/site-functions")
-
-autoload -U promptinit; promptinit
-prompt pure
-
-# set locale
-export LC_ALL=en_US.UTF-8
-export LANG=en_US.UTF-8
-
-# disable auto naming of windows.
-DISABLE_AUTO_TITLE=true
-
-# autocomplete case insensitive
-zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
-# autocomplete with menu highlight
-zstyle ':completion:*:*:*:*:*' menu select
-
-# disable auto-correct
-unsetopt correct_all
-unsetopt correct
 
 # git
 alias ga='git add'
@@ -91,26 +16,8 @@ alias gd='git diff'
 alias gdt='git difftool'
 alias glo='git log'
 
-# tree with gitignore
-alias itree='tree --prune -I $(cat .gitignore | egrep -v "^#.*$|^[[:space:]]*$" | tr "\\n" "|")'
-
-# misc
-alias netlisten="sudo lsof -PiTCP -sTCP:LISTEN"
-
-# find alternative
-alias fd=fdfind
-
-# tmux
-alias tmux="TERM=screen-256color-bce tmux"
-
-# even shorter nvim
+# nvim
 alias v='nvim'
-
-# go into a dir without typing cd
-setopt AUTO_CD
-
-# tmuxinator
-alias mux='tmuxinator'
 
 # default editor
 export VISUAL=nvim
@@ -119,89 +26,8 @@ export EDITOR="$VISUAL"
 # npm global installs
 export PATH=/usr/local/share/npm/bin:$PATH
 
-# run local node packages
-alias npm-exec='PATH=$(npm bin):$PATH'
-
-# cache pip-installed packages to avoid re-downloading
-export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
-
-# virtualenvs home
-export WORKON_HOME=$HOME/.virtualenvs
-
-# golang
-export GOPATH=$HOME/gocode
-export PATH=$PATH:$GOPATH/bin
-
-# rust
-export PATH=$PATH:$HOME/.cargo/bin
-
-# docker
-alias kill_containers='docker kill $(docker ps -q)'
-alias stop_containers='docker stop $(docker ps -q)'
-alias delete_all_containers='docker rm $(docker ps -a -q)'
-alias delete_all_images='docker rmi $(docker images -q)'
-
-# history
-HISTSIZE=100000 # how many lines of history to keep in memory
-HISTFILE=~/.zsh_history
-SAVEHIST=100000 # number of history entries to save to disk
-setopt appendhistory
-setopt sharehistory
-setopt incappendhistory
-
-# fzf
-source ~/.fzf.zsh
-
-# asdf
-if [[ "$OSTYPE" == "linux-gnu" ]]; then
-  . $HOME/.asdf/asdf.sh
-  . $HOME/.asdf/completions/asdf.bash
-elif [[ "$OSTYPE" == darwin* ]]; then
-  . /opt/homebrew/opt/asdf/libexec/asdf.sh
-else
-  echo "OS not recognized while setting up asdf"
-fi
-
-# fd as the default file searcher
-export FZF_DEFAULT_COMMAND='fdfind --type f --hidden --follow --exclude .git'
-
-# to apply the command to CTRL-T as well
-export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-
-# workaround around libevent issue with tmux on Sierra: https://github.com/tmux/tmux/issues/475
-export EVENT_NOKQUEUE=1
-
-# pipx path (required by pipenv)
-export PATH="$HOME/.local/bin:$PATH"
-
 # make sure local libraries are always ahead
 export PATH=/usr/local/bin:$PATH
 
-# pyenv
-# linux doesn't install it with all the other local binaries
-if [[ "$OSTYPE" == "linux-gnu" ]]; then
-    export PATH="$HOME/.pyenv/bin:$PATH"
-fi
-
-if command -v pyenv &> /dev/null
-then
-  eval "$(pyenv init -)"
-  eval "$(pyenv virtualenv-init -)"
-fi
-
-
-# android development
-export ANDROID_HOME=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
-
-# workaround to enable passphrase for gpg in wsl
-export GPG_TTY=$(tty)
-
-# make sure ssh-agent is running all the time to remember passphrasses - wsl workaround
-eval $(ssh-agent)
-
-# always load zplug at the end
-zplug load
+# fzf
+source ~/.fzf.zsh
