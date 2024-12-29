@@ -1,8 +1,0 @@
-project_name: screeps
-project_root: ~/dev/personal/screeps
-windows:
-  - screeps:
-      layout: main-vertical
-      panes:
-        - nvm_init && nvm use && gst
-        - nvm_init && nvm use && nvim
