@@ -31,3 +31,5 @@ export PATH=/usr/local/bin:$PATH
 
 # fzf
 source ~/.fzf.zsh
+
+eval "$(starship init zsh)"
