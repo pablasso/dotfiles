@@ -3,6 +3,14 @@
 # zsh completions
 fpath+=("$(brew --prefix)/share/zsh/site-functions")
 
+# shell history
+HISTSIZE=100000 # how many lines of history to keep in memory
+HISTFILE=~/.zsh_history
+SAVEHIST=100000 # number of history entries to save to disk
+setopt appendhistory # append instead of overwrite
+setopt sharehistory # share history across sessions/tabs
+setopt incappendhistory # append as soon as is executed instead of waiting for the shell to exit
+
 # git
 alias ga='git add'
 alias gc='git commit --verbose'
