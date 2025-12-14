@@ -47,4 +47,7 @@ tmux-client-*
 tmux-server-*
 
 # editors
-.vscode
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
