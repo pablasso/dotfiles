@@ -1,2 +1,3 @@
 font-size = 15
 theme = Atom
+keybind = shift+enter=text:\n
