@@ -40,4 +40,5 @@ export PATH=/usr/local/bin:$PATH
 # fzf
 source ~/.fzf.zsh
 
+eval "$(/home/pablasso/.local/bin/mise activate zsh)"
 eval "$(starship init zsh)"
