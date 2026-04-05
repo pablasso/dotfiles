@@ -1,3 +1,4 @@
 font-size = 15
 theme = Atom
 keybind = shift+enter=text:\n
+keybind = alt+backspace=text:\x1b\x7f
