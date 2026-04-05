@@ -1,7 +1,11 @@
 # source this file in ~/.zshrc
 
 # zsh completions
-fpath+=("$(brew --prefix)/share/zsh/site-functions")
+typeset -U fpath
+(( $+commands[brew] )) && fpath+=("$(brew --prefix)/share/zsh/site-functions")
+[[ -d /usr/local/share/zsh/site-functions ]] && fpath+=(/usr/local/share/zsh/site-functions)
+[[ -d /usr/share/zsh/site-functions ]] && fpath+=(/usr/share/zsh/site-functions)
+[[ -d /usr/share/zsh/vendor-completions ]] && fpath+=(/usr/share/zsh/vendor-completions)
 
 # shell history
 HISTSIZE=100000 # how many lines of history to keep in memory
