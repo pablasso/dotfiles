@@ -41,7 +41,18 @@ export PATH=/usr/local/share/npm/bin:$PATH
 # make sure local libraries are always ahead
 export PATH=/usr/local/bin:$PATH
 
-# fzf
+# expected tools
+if [[ -o interactive ]]; then
+  typeset -a missing_tools
+  for cmd in git nvim fzf rg starship; do
+    (( $+commands[$cmd] )) || missing_tools+=($cmd)
+  done
+  (( $+commands[mise] )) || [[ -x "$HOME/.local/bin/mise" ]] || missing_tools+=(mise)
+  (( ${#missing_tools[@]} )) && print -u2 -- "[zsh] missing tools: ${missing_tools[*]}"
+  unset missing_tools
+fi
+
+# fzf shell integration
 if [[ -f ~/.fzf.zsh ]]; then
   source ~/.fzf.zsh
 elif (( $+commands[brew] )) && [[ -f "$(brew --prefix)/opt/fzf/shell/key-bindings.zsh" ]]; then
