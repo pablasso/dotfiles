@@ -63,5 +63,5 @@ else
   [[ -f /usr/share/doc/fzf/examples/completion.zsh ]] && source /usr/share/doc/fzf/examples/completion.zsh
 fi
 
-eval "$(/home/pablasso/.local/bin/mise activate zsh)"
+eval "$(mise activate zsh)"
 eval "$(starship init zsh)"
