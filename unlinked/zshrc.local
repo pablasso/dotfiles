@@ -41,6 +41,9 @@ export PATH=/usr/local/share/npm/bin:$PATH
 # make sure local libraries are always ahead
 export PATH=/usr/local/bin:$PATH
 
+# linux wants me to
+export PATH="$HOME/.local/bin:$PATH"
+
 # expected tools
 if [[ -o interactive ]]; then
   typeset -a missing_tools
