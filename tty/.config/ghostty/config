@@ -2,3 +2,13 @@ font-size = 15
 theme = Atom
 keybind = shift+enter=text:\n
 keybind = alt+backspace=text:\x1b\x7f
+
+# Resize splits: default 30 units, +Shift for fine 10-unit adjustment
+keybind = cmd+ctrl+left=resize_split:left,30
+keybind = cmd+ctrl+right=resize_split:right,30
+keybind = cmd+ctrl+up=resize_split:up,30
+keybind = cmd+ctrl+down=resize_split:down,30
+keybind = cmd+ctrl+shift+left=resize_split:left,10
+keybind = cmd+ctrl+shift+right=resize_split:right,10
+keybind = cmd+ctrl+shift+up=resize_split:up,10
+keybind = cmd+ctrl+shift+down=resize_split:down,10
