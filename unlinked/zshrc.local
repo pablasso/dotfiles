@@ -31,6 +31,9 @@ alias glo='git log'
 # nvim
 alias v='nvim'
 
+# claude
+alias c='claude'
+
 # default editor
 export VISUAL=nvim
 export EDITOR="$VISUAL"
