@@ -29,6 +29,16 @@ Stow will not overwrite existing files. If a target already exists, it will erro
 | `tmux` | tmux.conf |
 | `tty` | Ghostty terminal config |
 
+## Ghostty over SSH
+
+Ghostty sets `TERM=xterm-ghostty`. If a remote host does not know that terminfo entry, shell editing can behave strangely (for example, backspace may not delete). Install the local terminfo on the remote host with:
+
+```sh
+infocmp -x xterm-ghostty | ssh <host> 'tic -x -'
+```
+
+Fallback: set `TERM=xterm-256color` for that host in `~/.ssh/config`.
+
 ## Unlinked
 
 The `unlinked/` folder contains files that are not meant to be stowed. They need to be sourced or referenced manually.
