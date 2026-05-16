@@ -41,6 +41,9 @@ alias h='hunk'
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 
+# Keep nvim as the default editor, but use normal shell line editing.
+bindkey -e
+
 # npm global installs
 export PATH=/usr/local/share/npm/bin:$PATH
 
