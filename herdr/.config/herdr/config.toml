@@ -1,0 +1,13 @@
+onboarding = false
+
+[keys]
+prefix = "ctrl+a"
+previous_tab = "prefix+,"
+next_tab = "prefix+."
+
+[ui.toast]
+delivery = "terminal"
+
+[theme]
+name = "gruvbox"
+auto_switch = false

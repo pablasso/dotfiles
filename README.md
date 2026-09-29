@@ -10,12 +10,15 @@ Clone this repo to `~/.dotfiles` and use [GNU Stow](https://www.gnu.org/software
 cd ~/.dotfiles
 stow editors
 stow git
+stow herdr
 ```
 
 Each top-level folder is a stow package. Running `stow <folder>` creates symlinks from the folder's contents into `~`, mirroring the directory structure. For example, `stow editors` links:
 
 - `editors/.emacs` → `~/.emacs`
 - `editors/.config/nvim/init.vim` → `~/.config/nvim/init.vim`
+
+Run Stow from `~/.dotfiles` so it reads this repo's `.stowrc`, which enables `--no-folding` automatically for every package. New links point to individual files rather than whole directories, keeping app-generated state out of the repo. Existing directory symlinks are not automatically converted.
 
 Stow will not overwrite existing files. If a target already exists, it will error out. Back up or remove the conflicting file first, then re-run.
 
@@ -25,6 +28,7 @@ Stow will not overwrite existing files. If a target already exists, it will erro
 |---|---|
 | `editors` | Emacs, Neovim, EditorConfig |
 | `git` | gitconfig, global gitignore |
+| `herdr` | Herdr config (no session state, logs, or sockets) |
 | `ssh` | SSH client config |
 | `tmux` | tmux.conf |
 | `tty` | Ghostty terminal config |
