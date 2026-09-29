@@ -4,6 +4,8 @@ onboarding = false
 prefix = "ctrl+a"
 previous_tab = "prefix+,"
 next_tab = "prefix+."
+previous_agent = "prefix+up"
+next_agent = "prefix+down"
 
 [ui.toast]
 delivery = "terminal"
