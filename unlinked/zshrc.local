@@ -53,6 +53,9 @@ export PATH=/usr/local/bin:$PATH
 # linux wants me to
 export PATH="$HOME/.local/bin:$PATH"
 
+# activate mise before the tool checks; on Linux it provides nvim, fzf, rg, and starship
+eval "$(mise activate zsh)"
+
 # expected tools
 if [[ -o interactive ]]; then
   typeset -a missing_tools
@@ -70,10 +73,12 @@ if [[ -f ~/.fzf.zsh ]]; then
 elif (( $+commands[brew] )) && [[ -f "$(brew --prefix)/opt/fzf/shell/key-bindings.zsh" ]]; then
   source "$(brew --prefix)/opt/fzf/shell/key-bindings.zsh"
   source "$(brew --prefix)/opt/fzf/shell/completion.zsh"
-else
-  [[ -f /usr/share/doc/fzf/examples/key-bindings.zsh ]] && source /usr/share/doc/fzf/examples/key-bindings.zsh
+elif [[ -f /usr/share/doc/fzf/examples/key-bindings.zsh ]]; then
+  source /usr/share/doc/fzf/examples/key-bindings.zsh
   [[ -f /usr/share/doc/fzf/examples/completion.zsh ]] && source /usr/share/doc/fzf/examples/completion.zsh
+elif (( $+commands[fzf] )); then
+  # fzf 0.48+ prints its own key bindings and completion
+  source <(fzf --zsh)
 fi
 
-eval "$(mise activate zsh)"
 eval "$(starship init zsh)"
