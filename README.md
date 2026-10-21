@@ -11,6 +11,7 @@ cd ~/.dotfiles
 stow editors
 stow git
 stow herdr
+stow rex
 ```
 
 Each top-level folder is a stow package. Running `stow <folder>` creates symlinks from the folder's contents into `~`, mirroring the directory structure. For example, `stow editors` links:
@@ -29,6 +30,7 @@ Stow will not overwrite existing files. If a target already exists, it will erro
 | `editors` | Emacs, Neovim, EditorConfig |
 | `git` | gitconfig, global gitignore |
 | `herdr` | Herdr config (no session state, logs, or sockets) |
+| `rex` | Rex config (`init.lua`) |
 | `ssh` | SSH client config |
 | `tmux` | tmux.conf |
 | `tty` | Ghostty terminal config |
