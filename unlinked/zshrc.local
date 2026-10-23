@@ -82,3 +82,9 @@ elif (( $+commands[fzf] )); then
 fi
 
 eval "$(starship init zsh)"
+
+# rexurrect: record each Rex block's last command so a restore can type it back at the prompt.
+# Loads only where rexurrect is installed; the plugin itself does nothing outside Rex.
+if [[ -x ~/.cargo/bin/rexurrect ]]; then
+  source ~/.dotfiles/unlinked/rexurrect.plugin.zsh
+fi
