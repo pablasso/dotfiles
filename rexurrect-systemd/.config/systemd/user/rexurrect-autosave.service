@@ -1,0 +1,12 @@
+# Linux stand-in for `rexurrect autosave install`, which only supports macOS launchd
+# until cemcatik/rexurrect#39. %h is $HOME, %t is $XDG_RUNTIME_DIR.
+[Unit]
+Description=rexurrect autosave: snapshot Rex sessions
+
+[Service]
+Type=oneshot
+ExecStart=%h/.cargo/bin/rexurrect save
+Environment=REX_SERVER=unix://%t/rex/server.sock
+Environment=REXURRECT_STATE_DIR=%h/.local/state/rexurrect
+Environment=PATH=/usr/bin:/bin:/usr/sbin:/sbin
+StandardOutput=null

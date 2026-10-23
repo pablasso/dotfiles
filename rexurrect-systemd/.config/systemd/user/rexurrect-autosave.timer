@@ -1,0 +1,11 @@
+# Runs rexurrect-autosave.service every 15 minutes, like `rexurrect autosave install` on macOS.
+[Unit]
+Description=rexurrect autosave every 15 minutes
+
+[Timer]
+OnActiveSec=15min
+OnUnitActiveSec=15min
+AccuracySec=1min
+
+[Install]
+WantedBy=timers.target
