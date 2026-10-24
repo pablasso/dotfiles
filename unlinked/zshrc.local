@@ -53,6 +53,9 @@ export PATH=/usr/local/bin:$PATH
 # linux wants me to
 export PATH="$HOME/.local/bin:$PATH"
 
+# Rust and binaries installed with cargo (including rexurrect).
+[[ -f "$HOME/.cargo/env" ]] && source "$HOME/.cargo/env"
+
 # activate mise before the tool checks; on Linux it provides nvim, fzf, rg, and starship
 eval "$(mise activate zsh)"
 
