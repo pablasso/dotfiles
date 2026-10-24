@@ -41,7 +41,9 @@ Stow will not overwrite existing files. If a target already exists, it will erro
 [rexurrect](https://github.com/cemcatik/rexurrect) saves Rex sessions and restores them when the Rex server restarts. The auto-restore hook (`rex`) and the zsh recorder (`zshrc.local`) are already here and stay inactive until `~/.cargo/bin/rexurrect` exists. On a new machine:
 
 1. Stow `rex` and source `zshrc.local` (see Setup).
-2. Install: `cargo install --git https://github.com/cemcatik/rexurrect`. On Linux, upstream restores panes without a shell; until that's fixed, build from the `linux-support` branch in `~/workplace/rexurrect` on the Mac or Desk.
+2. Install:
+   - macOS: `cargo install --git https://github.com/cemcatik/rexurrect --locked`.
+   - Linux: build a Linux-patched checkout with `cargo install --path /path/to/rexurrect --locked`. Until upstream supports Linux restoration, the checkout must fix the macOS-only shell launch used when replaying scrollback.
 3. Autosave every 15 minutes:
    - macOS, from a Rex pane: `rexurrect autosave install`
    - Linux: `stow rexurrect-systemd && systemctl --user daemon-reload && systemctl --user enable --now rexurrect-autosave.timer`. Also run `loginctl enable-linger` if the Rex server runs while you're logged out.
