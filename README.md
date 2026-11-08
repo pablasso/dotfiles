@@ -10,7 +10,6 @@ Clone this repo to `~/.dotfiles` and use [GNU Stow](https://www.gnu.org/software
 cd ~/.dotfiles
 stow editors
 stow git
-stow herdr
 stow rex
 ```
 
@@ -29,7 +28,6 @@ Stow will not overwrite existing files. If a target already exists, it will erro
 |---|---|
 | `editors` | Emacs, Neovim, EditorConfig |
 | `git` | gitconfig, global gitignore |
-| `herdr` | Herdr config (no session state, logs, or sockets) |
 | `rex` | Rex config (`init.lua`) |
 | `ssh` | SSH client config |
 | `tmux` | tmux.conf |
