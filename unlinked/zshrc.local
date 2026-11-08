@@ -53,7 +53,7 @@ export PATH=/usr/local/bin:$PATH
 # linux wants me to
 export PATH="$HOME/.local/bin:$PATH"
 
-# Rust and binaries installed with cargo (including rexurrect).
+# Rust and binaries installed with cargo.
 [[ -f "$HOME/.cargo/env" ]] && source "$HOME/.cargo/env"
 
 # activate mise before the tool checks; on Linux it provides nvim, fzf, rg, and starship
@@ -85,9 +85,3 @@ elif (( $+commands[fzf] )); then
 fi
 
 eval "$(starship init zsh)"
-
-# rexurrect: record each Rex block's last command so a restore can type it back at the prompt.
-# Loads only where rexurrect is installed; the plugin itself does nothing outside Rex.
-if [[ -x ~/.cargo/bin/rexurrect ]]; then
-  source ~/.dotfiles/unlinked/rexurrect.plugin.zsh
-fi
