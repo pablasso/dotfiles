@@ -29,6 +29,7 @@ Then restore this machine's [machine-specific files](#machine-specific-files).
 
 | Folder | Contents |
 |---|---|
+| `claude` | Claude Code status line (`statusline.sh`); `~/.claude/settings.json` points at it and stays per machine |
 | `editors` | Emacs, Neovim, EditorConfig |
 | `git` | gitconfig, global gitignore |
 | `hammerspoon` | Hammerspoon config: menu bar status monitor (`init.lua`, `status.lua`) |

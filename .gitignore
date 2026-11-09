@@ -1,1 +1,4 @@
 plugged/
+
+# ~/.gitignore_global ignores .claude/ (per-project Claude settings); this package is meant to be tracked.
+!/claude/.claude/
